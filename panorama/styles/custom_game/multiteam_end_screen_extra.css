@@ -1,0 +1,50 @@
+/* Prettified by Source 2 Viewer 19.1.0.0 - https://valveresourceformat.github.io */
+
+.ScoreCol_Abilities
+{
+	margin-left: 1px;
+	flow-children: right;
+}
+
+.LegendPanel.ScoreCol_Abilities
+{
+	width: 330px;
+	text-align: center;
+}
+
+.ScoreCol_Ratings
+{
+	width: 100px;
+	margin-left: 1px;
+	flow-children: right;
+}
+
+.LegendPanel.ScoreCol_Ratings
+{
+	width: 100px;
+	text-align: center;
+}
+
+#PlayerRating
+{
+	vertical-align: center;
+	margin-left: 5px;
+	font-size: 23px;
+}
+
+.RatingGreen #PlayerRating
+{
+	color: green;
+}
+
+.RatingRed #PlayerRating
+{
+	color: red;
+}
+
+#RatingsContainer
+{
+	background-color: black;
+	height: 100%;
+}
+

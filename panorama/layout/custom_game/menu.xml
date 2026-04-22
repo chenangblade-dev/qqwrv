@@ -1,0 +1,286 @@
+<!-- xml reconstructed by Source 2 Viewer 19.1.0.0 - https://valveresourceformat.github.io -->
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/dotastyles.vcss_c" />
+		<include src="s2r://panorama/styles/custom_game/menu.vcss_c" />
+		<include src="s2r://panorama/styles/custom_game/plus.vcss_c" />
+		<include src="s2r://panorama/styles/custom_game/menu_myinfo.vcss_c" />
+		<include src="s2r://panorama/styles/custom_game/menu_rank.vcss_c" />
+		<include src="s2r://panorama/styles/custom_game/menu_shop.vcss_c" />
+		<include src="s2r://panorama/styles/custom_game/menu_collections.vcss_c" />
+	</styles>
+	<scripts>
+		<include src="s2r://panorama/scripts/custom_game/utils.vjs_c" />
+		<include src="s2r://panorama/scripts/custom_game/avalon.vjs_c" />
+		<include src="s2r://panorama/scripts/custom_game/attributes.vjs_c" />
+		<include src="s2r://panorama/scripts/custom_game/menu/general.vjs_c" />
+		<include src="s2r://panorama/scripts/custom_game/menu/rank.vjs_c" />
+		<include src="s2r://panorama/scripts/custom_game/menu/shop.vjs_c" />
+		<include src="s2r://panorama/scripts/custom_game/menu/plus.vjs_c" />
+	</scripts>
+	<snippets>
+		<snippet name="LadderPlayer">
+			<Panel class="LadderPlayerRoot">
+				<Panel class="RankIndex">
+					<Label text="99" id="rank_index" />
+				</Panel>
+				<Panel class="RankPlayerAvatar">
+					<DOTAAvatarImage steamid="local" id="player_avatar" />
+				</Panel>
+				<Panel class="RankPlayerName">
+					<DOTAUserName steamid="local" id="player_user_name" />
+				</Panel>
+				<Panel class="RankRating">
+					<Label text="9999" id="rank_text" />
+				</Panel>
+			</Panel>
+		</snippet>
+		<snippet name="ShopItem">
+			<Panel class="ShopItemRoot NotEnoughPoints">
+				<Panel class="ShopItemTitlePanel">
+					<Label id="shop_item_title" class="ShopItemTitle" />
+				</Panel>
+				<Panel class="ShopItemImagePanel" id="shop_item_image_panel">
+					<Image id="shop_item_image" class="ShopItemImage" />
+					<Panel class="PreviewButton" id="preview_button">
+						<Image src="s2r://panorama/images/custom_game/econ/preview_png.vtex" />
+					</Panel>
+				</Panel>
+				<Panel class="PurchaseButton" id="purchase_button">
+					<Label id="purchase_cost_text" text="#purchase_cost" html="true" />
+				</Panel>
+				<Panel class="SaleOverlay DontShow" id="sale_overlay" />
+				<Panel class="OwnedOverlay" id="owned_overlay" />
+			</Panel>
+		</snippet>
+		<snippet name="TradeHistoryItem">
+			<Panel class="TradeItemRoot">
+				<Label id="trade_index" />
+				<Label id="trade_day" />
+				<Label id="trade_time" />
+				<Label id="trade_amount" />
+				<Label id="trade_type" />
+			</Panel>
+		</snippet>
+		<snippet name="CollectionItem">
+			<Panel class="CollectionItemRoot">
+				<Panel class="CollectionItemTitlePanel">
+					<Label id="collection_item_title" class="CollectionItemTitle" />
+				</Panel>
+				<Panel class="CollectionItemImagePanel">
+					<Image id="collection_item_image" class="CollectionItemImage" />
+				</Panel>
+				<Panel class="CollectionButtonsPanel">
+					<Button class="ButtonBevel" id="button_equip">
+						<Label text="#Equip" />
+					</Button>
+					<Button class="ButtonBevel" id="button_remove">
+						<Label text="#Remove" />
+					</Button>
+				</Panel>
+			</Panel>
+		</snippet>
+		<snippet name="AbilityPoolHero">
+			<Panel class="AbilityPoolHeroRoot">
+				<DOTAHeroImage id="hero_avatar" class="AbilityPoolHeroAvatar" heroimagestyle="portrait" />
+				<Panel class="HeroNameAndAbilities">
+					<Label class="HeroName" text="#npc_dota_hero_abaddon" id="pool_hero_name" />
+					<Panel class="AbilityPoolHeroAbilitiesPanel">
+						<DOTAAbilityImage class="AbilityInPool" ability="empty_1" id="ability_1" />
+						<DOTAAbilityImage class="AbilityInPool" ability="empty_1" id="ability_2" />
+						<DOTAAbilityImage class="AbilityInPool" ability="empty_1" id="ability_3" />
+						<DOTAAbilityImage class="AbilityInPool" ability="empty_1" id="ability_4" />
+						<DOTAAbilityImage class="AbilityInPool" ability="empty_1" id="ability_5" />
+					</Panel>
+				</Panel>
+			</Panel>
+		</snippet>
+	</snippets>
+	<Panel class="menu_Root" hittest="false">
+		<Panel class="MenuHitListener MenuHidden" id="menu_hit_listener" oncontextmenu="OnClickCloseMenu()" onactivate="OnClickCloseMenu()" />
+		<Panel class="PlusButton" onactivate="ToggleMenuItems()">
+			<Panel class="PlusIcon" />
+			<Label class="PlusText" text="#battle_royale_plus" />
+		</Panel>
+		<Panel class="PointsRemainingTip Hidden" id="points_remaining_tip_panel">
+			<Label text="0" id="points_remaining_button_tip" />
+		</Panel>
+		<Panel class="MenuItems" id="menu_items">
+			<Panel id="MenuItem_Rank" class="MenuItem" onactivate="OpenRank()">
+				<Image class="MenuItemBackground" src="s2r://panorama/images/custom_game/menu/4_png.vtex" />
+				<Image id="MenuItemOverlay" src="s2r://panorama/images/custom_game/menu/cover_png.vtex" />
+				<Panel class="MenuTextBackground" />
+				<Label text="#WorldRank" class="MenuText" />
+			</Panel>
+			<Panel id="MenuItem_Collection" class="MenuItem" onactivate="OpenCollection()">
+				<Image class="MenuItemBackground" src="s2r://panorama/images/custom_game/menu/5_png.vtex" />
+				<Image id="MenuItemOverlay" src="s2r://panorama/images/custom_game/menu/cover_png.vtex" />
+				<Panel class="MenuTextBackground" />
+				<Label text="#Collection" class="MenuText" />
+			</Panel>
+			<Panel id="MenuItem_Shop" class="MenuItem" onactivate="OpenShop()">
+				<Image class="MenuItemBackground" src="s2r://panorama/images/custom_game/menu/3_png.vtex" />
+				<Image id="MenuItemOverlay" src="s2r://panorama/images/custom_game/menu/cover_png.vtex" />
+				<Panel class="MenuTextBackground" />
+				<Label text="#Shop" class="MenuText" />
+			</Panel>
+			<Panel id="MenuItem_Payment" class="MenuItem" onactivate="OpenPayment()">
+				<Image class="MenuItemBackground" src="s2r://panorama/images/custom_game/menu/2_png.vtex" />
+				<Image id="MenuItemOverlay" src="s2r://panorama/images/custom_game/menu/cover_png.vtex" />
+				<Panel class="MenuTextBackground" />
+				<Label text="#GetPoints" class="MenuText" />
+			</Panel>
+			<Panel id="MenuItem_Plus" class="MenuItem" onactivate="OpenPlus()">
+				<Image class="MenuItemBackground" src="s2r://panorama/images/custom_game/menu/6_png.vtex" />
+				<Image id="MenuItemOverlay" src="s2r://panorama/images/custom_game/menu/cover_png.vtex" />
+				<Panel class="MenuTextBackground" />
+				<Label text="#PurchasePlus" class="MenuText" />
+			</Panel>
+		</Panel>
+		<Panel class="MenuPage Rank Hidden" id="page_rank">
+			<Panel class="RankTitleAndSeason">
+				<Label class="WorldRankTitle" text="#WorldRank" id="world_rank_title" />
+				<Label class="WorldRankSeason" text="#current_season" id="current_season" />
+			</Panel>
+			<Panel class="WorldRanks">
+				<Panel class="WorldRankPanel" id="rank_1x10">
+					<Label class="WorldRank_MapName" id="map_name_1x10" text="#arena_1x10" />
+					<Panel class="WorldRankPlayers" id="world_rank_players_1x10" />
+				</Panel>
+				<Panel class="WorldRankPanel" id="rank_2x6">
+					<Label class="WorldRank_MapName" id="map_name_2x6" text="#arena_2x6" />
+					<Panel class="WorldRankPlayers" id="world_rank_players_2x6" />
+				</Panel>
+				<Panel class="WorldRankPanel" id="rank_3x4">
+					<Label class="WorldRank_MapName" id="map_name_3x4" text="#arena_3x4" />
+					<Panel class="WorldRankPlayers" id="world_rank_players_3x4" />
+				</Panel>
+			</Panel>
+		</Panel>
+		<Panel class="MenuPage Collections Hidden" id="page_collection">
+			<Panel class="CollectionMenuHeader">
+				<Label class="CollectionTitle" text="#Collection" />
+				<Button class="CloseButton" onactivate="CloseCollections()" />
+			</Panel>
+			<Panel class="CollectionContent">
+				<Panel class="CollectionCells" id="collection_cells" />
+			</Panel>
+		</Panel>
+		<Panel class="MenuPage Shop Hidden" id="page_shop">
+			<Panel class="ShopContent">
+				<Panel class="ShopTitle">
+					<Label class="ShopMainTitle" text="#point_shop" />
+					<Button class="CloseButton" onactivate="CloseShop()" />
+				</Panel>
+				<Panel class="ShopItems" id="shop_items" />
+			</Panel>
+			<Panel class="TradeHistory Hidden" id="trade_history" />
+			<Panel class="PlayerMessage">
+				<Panel class="PlayerMessagePanels">
+					<Panel class="PlayerMessagePanel PlayerUserName">
+						<DOTAUserName steamid="local" id="shop_page_steamid" />
+					</Panel>
+					<Panel class="PlayerMessagePanel MyPointsPrefix">
+						<Label id="my_point_prefix" text="#my_points" />
+					</Panel>
+					<Panel class="PlayerMessagePanel MyPoints">
+						<Label id="my_point" text="0" />
+					</Panel>
+					<Panel class="PlayerMessagePanel ChargePanel DontShow" id="charge_panel" onactivate="ToggleChargePanel()">
+						<Label id="charge_button_text" text="#GetPoints" />
+					</Panel>
+					<Panel id="show_history_button" class="PlayerMessagePanel ShowHistoryPanel" onactivate="TogglePointHistory()">
+						<Label text="#show_point_history" />
+					</Panel>
+					<Panel id="refresh_button" class="PlayerMessagePanel QueryPointsPanel" onactivate="QueryShopRelatedDataFromServer()">
+						<Label text="#refresh" id="refresh_button_label" />
+					</Panel>
+				</Panel>
+				<DOTAAvatarImage steamid="local" id="shop_page_avatar" />
+				<Label id="point_get_method_message" text="#point_get_methods" />
+			</Panel>
+			<Panel class="ConfirmPurchaseDialog Hidden" id="confirm_purchase_dialog">
+				<Label id="confirm_purchase" text="#confirm_purchase_msg" html="true" />
+				<Panel class="ConfirmPurchaseButtons">
+					<Button class="ButtonBevel" id="button_confirm" onactivate="OnConfirmPurchase()">
+						<Label text="#confirm" />
+					</Button>
+					<Button class="ButtonBevel" id="button_cancel" onactivate="HideConfirmPurchasePanel()">
+						<Label text="#cancel" />
+					</Button>
+				</Panel>
+			</Panel>
+		</Panel>
+		<Panel class="PurchasePlus Hidden" id="page_plus">
+			<Button id="CloseButton" class="CloseButton" onactivate="ClosePurchasePlus()" />
+			<Panel id="BGImage" />
+			<Panel id="ContentContainer" class="TopButtomFlow">
+				<Label class="PopupTitle" text="#become_bom_plus" />
+				<Label class="BodyText" text="#plus_description" html="true" />
+				<Panel class="PurchaseOptions">
+					<Panel class="PurchaseOption">
+						<Button class="BrightButton" onactivate="OnPurchase(30)">
+							<Label class="PurchaseLabel" text="#purchase_option_30" />
+						</Button>
+						<Label class="PurchaseOptionLabel" text="#purchase_tooltip_30" />
+					</Panel>
+					<Panel class="PurchaseOption">
+						<Button class="BrightButton" onactivate="OnPurchase(90)">
+							<Label class="PurchaseLabel" text="#purchase_option_90" />
+						</Button>
+						<Label class="PurchaseOptionLabel" text="#purchase_tooltip_90" />
+					</Panel>
+					<Panel class="PurchaseOption">
+						<Button class="BrightButton" onactivate="OnPurchase(180)">
+							<Label class="PurchaseLabel" text="#purchase_option_180" />
+						</Button>
+						<Label class="PurchaseOptionLabel" text="#purchase_tooltip_180" />
+					</Panel>
+				</Panel>
+				<Label class="ExpireTimeText" text="#points_remaining" html="true" id="points_remaining" />
+				<Panel class="PurchaseOption" id="get_points_button_in_plus">
+					<Button class="BrightButton" onactivate="GameUI.OpenPayment()">
+						<Label class="PurchaseLabel" text="#getpoints" />
+					</Button>
+				</Panel>
+				<Label class="ExpireTimeText" text="#plus_expire_time" html="true" id="plus_data" />
+				<Label class="ExpireTimeText" text="" html="true" id="purchase_result" />
+			</Panel>
+			<Panel id="QueryingOverlay" hittest="false">
+				<Label text="querying_plus_data_from_server" html="true" />
+			</Panel>
+		</Panel>
+		<Panel id="page_ability_pool" class="AbilityPoolRoot Hidden">
+			<Panel id="HeroPool" class="HeroPool">
+				<Panel class="HeroPoolSplitByAttribute">
+					<Label class="AttributeName" text="#DOTA_Attribute_Strength" />
+					<Panel id="HeroPool_DOTA_ATTRIBUTE_STRENGTH" class="HeroPool_SplitByAttribute" />
+				</Panel>
+				<Panel class="HeroPoolSplitByAttribute">
+					<Label class="AttributeName" text="#DOTA_Attribute_Agility" />
+					<Panel id="HeroPool_DOTA_ATTRIBUTE_AGILITY" class="HeroPool_SplitByAttribute" />
+				</Panel>
+				<Panel class="HeroPoolSplitByAttribute">
+					<Label class="AttributeName" text="#DOTA_Attribute_Intellect" />
+					<Panel id="HeroPool_DOTA_ATTRIBUTE_INTELLECT" class="HeroPool_SplitByAttribute" />
+				</Panel>
+				<Panel class="HeroPoolSplitByAttribute">
+					<Label class="AttributeName" text="#DOTA_Attribute_All" />
+					<Panel id="HeroPool_DOTA_ATTRIBUTE_ALL" class="HeroPool_SplitByAttribute" />
+				</Panel>
+			</Panel>
+			<Panel id="AbilityPool" class="AbilityPool">
+				<Panel id="AbilityPool_DOTA_ATTRIBUTE_STRENGTH" class="AbilityPool_SplitByAttribute" />
+				<Panel id="AbilityPool_DOTA_ATTRIBUTE_AGILITY" class="AbilityPool_SplitByAttribute" />
+				<Panel id="AbilityPool_DOTA_ATTRIBUTE_INTELLECT" class="AbilityPool_SplitByAttribute" />
+				<Panel id="AbilityPool_DOTA_ATTRIBUTE_ALL" class="AbilityPool_SplitByAttribute" />
+			</Panel>
+		</Panel>
+		<Panel class="AlipayCharge Hidden" id="alipay_charge" onactivate="">
+			<Panel id="AvalonPayment" />
+		</Panel>
+		<Panel class="PaypalCharge Hidden" id="paypal_payment" onactivate="ClosePayment()">
+			<Label id="paypal_payment_tooltip" text="paypal_payment_tooltip" html="true" />
+		</Panel>
+	</Panel>
+</root>

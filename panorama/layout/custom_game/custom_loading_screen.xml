@@ -1,0 +1,29 @@
+<!-- xml reconstructed by Source 2 Viewer 19.1.0.0 - https://valveresourceformat.github.io -->
+<root>
+	<script><![CDATA[
+    function getRandomInt(max) {
+      return Math.floor(Math.random() * Math.floor(max));
+    }
+  	if ($.Language() !== "schinese") {
+      $("#qq_groups").style.visibility = "collapse";
+      $("#GameplayTooltipPanel").style.visibility = "collapse";
+    }else{
+      $("#discord").style.visibility = "collapse";
+      $("#gameplay_tooltip").text = $.Localize("#game_tooltip_" + (getRandomInt(20) + 1));
+    }
+  ]]></script>
+	<styles>
+		<include src="s2r://panorama/styles/custom_game/loading.vcss_c" />
+	</styles>
+	<Panel class="AddonLoadingRoot">
+		<Image id="background" class="BackImage" src="s2r://panorama/images/custom_game/loading_screen/loading_new_jpg.vtex" />
+		<Panel id="GameplayTooltipPanel">
+			<Label id="gameplay_tooltip" text="" />
+		</Panel>
+		<Panel class="QQGroups" id="qq_groups">
+			<Image class="qqgroup_qrcode" src="s2r://panorama/images/custom_game/qq1_png.vtex" />
+			<Image class="qqgroup_qrcode" src="s2r://panorama/images/custom_game/qq2_png.vtex" />
+		</Panel>
+		<Image id="discord" src="s2r://panorama/images/custom_game/loading_screen/discord_png.vtex" />
+	</Panel>
+</root>

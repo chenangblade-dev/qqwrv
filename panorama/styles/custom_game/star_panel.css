@@ -1,0 +1,123 @@
+/* Prettified by Source 2 Viewer 19.1.0.0 - https://valveresourceformat.github.io */
+
+#GameInfo
+{
+	horizontal-align:right;
+}
+
+.StarPanelRoot
+{
+	vertical-align: top;
+	horizontal-align:right;
+	margin-top: 50px;
+	visibility: collapse;
+	background-color:gradient( linear, 0% 0%, 100% 0%, from( #42566300 ), color-stop( .2, #42566355 ), to( #425663cc ) );
+	padding:10px;
+	flow-children:down;
+}
+
+.ShopOpen.StarPanelRoot
+{
+	margin-right: 320px;
+}
+
+.ShopOpen.ShopLarge.StarPanelRoot
+{
+	margin-right: 400px;
+}
+
+.HUDFlipped .ShopOpen.StarPanelRoot
+{
+	margin-right: 0px;
+}
+
+#StarPanel_Title
+{
+	flow-children:right;
+	horizontal-align: right;
+}
+
+#StarPanel
+{
+	vertical-align: top;
+	horizontal-align:center;
+	flow-children:right;
+}
+
+#StarTooltipPanel
+{
+	horizontal-align: right;
+	flow-children:right;
+	height:25px;
+}
+
+.PipImage
+{
+	width:25px;
+	height:25px;
+	margin-left:10px;
+	vertical-align: center;
+}
+
+.StarAttrLabel
+{
+	vertical-align: center;
+}
+
+#GoldCost
+{
+	margin-left: 3px;
+}
+
+.AbilityPoolButton
+{
+	width: 130px;
+	height: 30px;
+	margin-right:-10px;
+	background-color:gradient( linear, 0% 0%, 100% 0%, from( #42566300 ), color-stop( .2, #42566355 ), to( #647783cc ) );
+}
+
+.AbilityPoolButton:hover
+{
+	background-color:gradient( linear, 0% 0%, 100% 0%, from( #425663cc ), color-stop( .2, #425663cc ), to( #849783cc ) );
+}
+
+.AbilityPoolButton:active
+{
+	background-color:gradient( linear, 0% 0%, 100% 0%, from( #425663cc ), color-stop( .2, #425663cc ), to( #849783cc ) );
+}
+
+.AbilityPoolText
+{
+	font-size: 23px;
+	horizontal-align: right;
+	vertical-align: center;
+	margin-right: 20px;
+}
+
+.StarPanelControlIcons
+{
+	flow-children: right;
+	horizontal-align: right;
+}
+
+.PurchaseStarsPanel
+{
+	flow-children: right;
+	horizontal-align: right;
+}
+
+.PurchaseStarsPanel > DOTAItemImage
+{
+	width: 40px;
+	height: 30px;
+	border-radius: 2px;
+	border: 1px solid black;
+	tooltip-position: bottom;
+}
+
+.PurchaseStarsPanel > DOTAItemImage:hover
+{
+	brightness: 1.5;
+}
+

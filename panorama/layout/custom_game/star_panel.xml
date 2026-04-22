@@ -1,0 +1,39 @@
+<!-- xml reconstructed by Source 2 Viewer 19.1.0.0 - https://valveresourceformat.github.io -->
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/dotastyles.vcss_c" />
+		<include src="s2r://panorama/styles/custom_game/star_panel.vcss_c" />
+	</styles>
+	<script><![CDATA[
+		function i() {$.Msg("213")}
+	]]></script>
+	<scripts>
+		<include src="s2r://panorama/scripts/custom_game/star_panel.vjs_c" />
+	</scripts>
+	<Panel class="StarPanelRoot" hittest="false">
+		<Label id="GameInfo" text="#da_game_info" hittestchildren="false" hittest="false" />
+		<Panel id="StarPanel_Title">
+			<Panel id="StarPanel" />
+			<Label id="StarTitle" text="#text_star_title" />
+		</Panel>
+		<Panel id="StarTooltipPanel" hittestchildren="false" hittest="false">
+			<Image class="PipImage" src="s2r://panorama/images/custom_game/pip/pip_gold_png.vtex" />
+			<Label class="StarAttrLabel" id="GoldCost" text="0" />
+			<Image class="PipImage" src="s2r://panorama/images/custom_game/pip/pip_str_png.vtex" />
+			<Label class="StarAttrLabel" id="StarStr" text="#text_star_str" />
+			<Image class="PipImage" src="s2r://panorama/images/custom_game/pip/pip_agi_png.vtex" />
+			<Label class="StarAttrLabel" id="StarAgi" text="#text_star_agi" />
+			<Image class="PipImage" src="s2r://panorama/images/custom_game/pip/pip_int_png.vtex" />
+			<Label class="StarAttrLabel" id="StarInt" text="#text_star_int" />
+		</Panel>
+		<Panel class="StarPanelControlIcons">
+			<Panel class="AbilityPoolButton" onactivate="GameUI.ToggleAbilityPool()">
+				<Label class="AbilityPoolText" text="#ability_pool" />
+			</Panel>
+			<Panel class="PurchaseStarsPanel">
+				<DOTAItemImage id="random_star_icon" itemname="item_random_star" onactivate="OnRandomStar()" onmouseover="ShowRandomStarTooltip()" onmouseout="HideRandomStarTooltip()" />
+				<DOTAItemImage id="add_star_icon" itemname="item_add_star" onactivate="OnAddStar()" onmouseover="ShowAddStarTooltip()" onmouseout="HideAddStarTooltip()" />
+			</Panel>
+		</Panel>
+	</Panel>
+</root>

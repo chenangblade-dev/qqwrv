@@ -1,0 +1,244 @@
+/* Prettified by Source 2 Viewer 19.1.0.0 - https://valveresourceformat.github.io */
+
+.HeroSelectorRoot
+{
+	width: 100%;
+	height: 100%;
+}
+
+.HeroSelectionPanel
+{
+	vertical-align: center;
+	horizontal-align: right;
+	flow-children: down;
+	transition-property: transform, opacity;
+	transition-duration: 0.2s;
+	transition-timing-function: ease-in-out;
+	background-image:url("s2r://panorama/images/custom_game/hud/background_png.vtex");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	opacity: 0.94;
+}
+
+.HeroSelectorPanelHeader
+{
+	background-image:url("s2r://panorama/images/custom_game/hud/header_png.vtex");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	width: 100%;
+	height: 10px;
+}
+
+.HeroSelectorContents
+{
+	flow-children: down;
+}
+
+.HeroSelectorPanelFooter
+{
+	background-color: white;
+	width: 100%;
+	height: 2px;
+}
+
+.HUDFlipped .HeroSelectionPanel
+{
+	horizontal-align: left;
+}
+
+.HeroSelectorPanelHide
+{
+	transform: translateX(500px);
+	opacity: 0;
+}
+
+.HeroSelector_HeroCards
+{
+	flow-children: right;
+	horizontal-align: center;
+	margin-top: 10px;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+.HeroSelector_HeroCard
+{
+	flow-children: down;
+	width: 180px;
+}
+
+.HeroPortraitContainer
+{
+	width: 100%;
+	height: 200px;
+	horizontal-align: center;
+}
+
+.HeroPortrait
+{
+	width: 100%;
+	height: 100%;
+}
+
+.HeroPortrait :hover
+{
+	brightness: 1.5;
+}
+
+.HeroSelector_HeroCard Label
+{
+	horizontal-align: center;
+	margin-top: 10px;
+	color: white;
+	font-family: Goudy Trajan Medium,FZKai-Z03,TH Sarabun New,YDYGO 540;
+}
+
+.Buttons
+{
+	flow-children: right;
+	horizontal-align: center;
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+.Buttons Button
+{
+	width: 120px;
+	height: 30px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.HeroSelectorTitle
+{
+	font-size: 30px;
+	margin-top: 20px;
+	horizontal-align: center;
+	color: white;
+}
+
+.HeroSelectorStats
+{
+	width: 400px;
+	visibility: collapse;
+}
+
+.LeftBranch
+{
+	horizontal-align: left;
+	width: 200px;
+}
+
+.RightBranch
+{
+	horizontal-align: right;
+	width: 200px;
+}
+
+.StatBonusLabel
+{
+	color: #e1e1e1;
+	font-size: 15px;
+	line-height: 16px;
+	width: 170px;
+	text-shadow: 1px 1px 2px 3.0 #00000077;
+	text-align: center;
+}
+
+.BranchChoice
+{
+	height: 36px;
+	margin-bottom: 4px;
+	margin-right: 16px;
+	padding: 4px;
+	padding-top: 6px;
+}
+
+#vip_reselect_button
+{
+	background-color:gradient( linear, 0% 0%, 0% 100%, from( #1a1815 ), to( #3b3b39 ) );
+}
+
+.IsVIP #vip_reselect_button
+{
+	height: 40px;
+	background-color:gradient( linear, 0% 0%, 0% 100%, from( #c28000 ), to( #ce8c11 ) );
+	width:150px;
+	border-top:1px solid #ffffff22;
+	border-left:1px solid #ffffff11;
+	border-right:1px solid #00000044;
+	border-bottom:1px solid #00000088;
+}
+
+.IsVIP #vip_reselect_button:hover
+{
+	background-color:gradient( linear, 0% 0%, 0% 100%, from( #8b5f05 ), to( #8a5c06 ) );
+}
+
+.IsVIP #vip_reselect_button:active
+{
+	background-color:gradient( linear, 0% 0%, 0% 100%, from( #e0a42c ), to( #f5b847 ) );
+}
+
+.IsVIP #vip_reselect_button Image
+{
+	visibility: collapse;
+}
+
+#vip_reselect_button Image
+{
+	width: 25px;
+	height: 25px;
+	margin-left: 5px;
+	vertical-align: center;
+	visibility: visible;
+}
+
+#vip_reselect_button Label
+{
+	margin-left: 10px;
+	font-size: 20px;
+	vertical-align: center;
+	horizontal-align: center;
+	font-family: Goudy Trajan Medium,FZKai-Z03,TH Sarabun New,YDYGO 540;
+}
+
+.IsVIP #vip_reselect_button Label
+{
+	margin-left: 0px;
+}
+
+#ignore_button
+{
+	height: 40px;
+	width:150px;
+	background-color:gradient( linear, 0% 0%, 0% 100%, from( #971f01 ), to( #961600 ) );
+	border-top:1px solid #ffffff22;
+	border-left:1px solid #ffffff11;
+	border-right:1px solid #00000044;
+	border-bottom:1px solid #00000088;
+	margin-left: 30px;
+}
+
+#ignore_button Label
+{
+	font-size: 20px;
+	vertical-align: center;
+	horizontal-align: center;
+	font-family: Goudy Trajan Medium,FZKai-Z03,TH Sarabun New,YDYGO 540;
+}
+
+#ignore_button:hover
+{
+	border-top:1px solid #cccaca22;
+	border-left:1px solid #918d8d11;
+	border-right:1px solid #3f373744;
+	border-bottom:1px solid #000039;
+	background-color:gradient( linear, 0% 0%, 0% 100%, from( #6b1500d2 ), to( #5a0606 ) );
+}
+
+#ignore_button:active
+{
+	background-color:gradient( linear, 0% 0%, 0% 100%, from( #d64520d2 ), to( #c22929 ) );
+}
+

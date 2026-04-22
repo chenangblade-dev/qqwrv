@@ -1,0 +1,131 @@
+/* Prettified by Source 2 Viewer 19.1.0.0 - https://valveresourceformat.github.io */
+
+Label
+{
+	color: #efefef;
+}
+
+#GameSetup_VotePanelRoot
+{
+	background-color:gradient( linear, 0% 0%, 0% 100%, from( #011a0c70 ), to( #01231140 ) );
+	width:290px;
+	height: 100%;
+	horizontal-align: right;
+}
+
+#GameSetup_ChooseKillsToWin
+{
+	width: 290px;
+	height: 750px;
+	flow-children: down;
+	border: 0px;
+	box-shadow:fill -4px -4px 8px 8px #2f3942cc;
+	vertical-align: top;
+	horizontal-align: center;
+}
+
+#GameSetup_ChooseKillsToWin_Title
+{
+	flow-children:right;
+	background-color: gradient( linear, 0% 0%, 100% 0%, from( #1b633c40), to( #01231140 ) );
+	width: 100%;
+	height: 40px;
+	flow-children: down;
+}
+
+.KillsToWinTitle
+{
+	vertical-align: center;
+	font-size: 20px;
+	margin-top: 10px;
+	margin-left: 30px;
+}
+
+.KillsToWinVoteOptions
+{
+	width: 100%;
+	flow-children: right-wrap;
+	padding: 4px;
+}
+
+.KillsToWinVoteOption
+{
+	width: 49%;
+	height: 80px;
+	border: 1px solid #3e444677;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding: 4px;
+	flow-children: down;
+}
+
+.KillsToWinVoteOption:hover
+{
+	background-color:gradient( linear, 0% 0%, 0% 100%, from( #011a0c66 ), to( #01231166 ) );
+	border: 1px solid #777777;
+}
+
+.KillsToWinVoteOption.FreeModeActivated
+{
+	background-color:gradient( linear, 0% 0%, 0% 100%, from( #06831166 ), to( #e3cb0166 ) );
+}
+
+.KillsToWinVoteOption:disabled
+{
+	background-color:gradient( linear, 0% 0%, 0% 100%, from( #77777766 ), to( #77777766 ) );
+	border: 1px solid #330000;
+}
+
+#free_model_panel
+{
+	visibility: collapse;
+}
+
+.KillsToWinVoteOption:disabled .KillsToWinOptionLabel
+{
+	color: #777777;
+}
+
+.KillsToWinVoteOption:active
+{
+	border: 1px solid #aaaaaa;
+}
+
+.KillsToWinOptionLabel
+{
+	font-size: 20px;
+	horizontal-align: center;
+}
+
+.KillsToWinVotedPlayers
+{
+	flow-children: right;
+	padding: 4px;
+	background-color: #00000066;
+	width: 100%;
+	height: 100%;
+	flow-children: right-wrap;
+}
+
+DOTAAvatarImage
+{
+	width: 23px;
+	height: 23px;
+	margin: 3px;
+	border: 1px solid #aaaaaa;
+}
+
+.VotePlayerAvatar
+{
+	width: 23px;
+	height: 23px;
+	border: 1px solid #aaaaaa;
+	vertical-align: top;
+	visibility: collapse;
+}
+
+.VotePlayerAvatar.Active
+{
+	visibility: visible;
+}
+

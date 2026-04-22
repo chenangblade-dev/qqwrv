@@ -1,0 +1,28 @@
+<!-- xml reconstructed by Source 2 Viewer 19.1.0.0 - https://valveresourceformat.github.io -->
+<root>
+	<scripts>
+		<include src="s2r://panorama/scripts/custom_game/manifest.vjs_c" />
+		<include src="s2r://panorama/scripts/custom_game/npc/npc_abilities.vjs_c" />
+		<include src="s2r://panorama/scripts/custom_game/npc/courier_abilities.vjs_c" />
+		<include src="s2r://panorama/scripts/custom_game/npc/passive_enabled_abilities.vjs_c" />
+	</scripts>
+	<styles>
+		<include src="s2r://panorama/styles/custom_game/resource_compiler.vcss_c" />
+	</styles>
+	<Panel>
+		<CustomUIElement type="Hud" layoutfile="s2r://panorama/layout/custom_game/dps.vxml_c" />
+		<CustomUIElement type="Hud" layoutfile="s2r://panorama/layout/custom_game/menu.vxml_c" />
+		<CustomUIElement type="Hud" layoutfile="s2r://panorama/layout/custom_game/barebones_hud_base.vxml_c" />
+		<CustomUIElement type="Hud" layoutfile="s2r://panorama/layout/custom_game/bubble.vxml_c" />
+		<CustomUIElement type="Hud" layoutfile="s2r://panorama/layout/custom_game/abilities.vxml_c" />
+		<CustomUIElement type="Hud" layoutfile="s2r://panorama/layout/custom_game/star_panel.vxml_c" />
+		<CustomUIElement type="Hud" layoutfile="s2r://panorama/layout/custom_game/overthrow_item_notification.vxml_c" />
+		<CustomUIElement type="Hud" layoutfile="s2r://panorama/layout/custom_game/hero_selector.vxml_c" />
+		<CustomUIElement type="Hud" layoutfile="s2r://panorama/layout/custom_game/hud.vxml_c" />
+		<CustomUIElement type="HudTopBar" layoutfile="s2r://panorama/layout/custom_game/multiteam_top_scoreboard.vxml_c" />
+		<CustomUIElement type="FlyoutScoreboard" layoutfile="s2r://panorama/layout/custom_game/multiteam_flyout_scoreboard.vxml_c" />
+		<CustomUIElement type="EndScreen" layoutfile="s2r://panorama/layout/custom_game/multiteam_end_screen.vxml_c" />
+		<CustomUIElement type="EndScreen" layoutfile="s2r://panorama/layout/custom_game/dps.vxml_c" />
+		<CustomUIElement type="EndScreen" layoutfile="s2r://panorama/layout/custom_game/menu.vxml_c" />
+	</Panel>
+</root>

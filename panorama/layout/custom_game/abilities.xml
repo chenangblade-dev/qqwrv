@@ -1,0 +1,36 @@
+<!-- xml reconstructed by Source 2 Viewer 19.1.0.0 - https://valveresourceformat.github.io -->
+<root>
+	<scripts>
+		<include src="s2r://panorama/scripts/custom_game/attributes.vjs_c" />
+		<include src="s2r://panorama/scripts/custom_game/ability_hack.vjs_c" />
+		<include src="s2r://panorama/scripts/custom_game/ability_selector.vjs_c" />
+	</scripts>
+	<styles>
+		<include src="s2r://panorama/styles/custom_game/ability_ui.vcss_c" />
+		<include src="s2r://panorama/styles/dotastyles.vcss_c" />
+	</styles>
+	<snippets>
+		<snippet name="AbilitySelectorAbility">
+			<Panel class="AbilitySelectorRoot">
+				<Panel id="player_ability_image">
+					<DOTAAbilityImage id="ability_image" />
+					<Panel id="AbilityBevel" hittest="false" />
+					<Panel id="PassiveAbilityBorder" hittest="false" />
+					<Panel id="AutocastableAbilityBorder" hittest="false" />
+					<Panel id="CourierAbilityOverlay" hittest="false" />
+					<Panel id="BOMAbilityOverlay" hittest="false" />
+				</Panel>
+				<Label id="ability_name" text="#Ability" />
+			</Panel>
+		</snippet>
+	</snippets>
+	<Panel class="AbilityUIRoot" hittest="false">
+		<Panel class="AbilitySelectorPanel" id="ability_selector">
+			<Label class="AbilitySelectorTitle" text="#ability_selector_title" />
+			<Panel class="AbilitySelectorAbilityImages" id="ability_selector_image_panel" />
+			<Button class="ButtonBevel ButtonCancel" onactivate="CancelAbilitySelect()">
+				<Label text="#dont_want" />
+			</Button>
+		</Panel>
+	</Panel>
+</root>

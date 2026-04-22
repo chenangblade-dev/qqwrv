@@ -1,0 +1,521 @@
+/* Prettified by Source 2 Viewer 19.1.0.0 - https://valveresourceformat.github.io */
+
+.MenuPage.Shop
+{
+	width: 65%;
+	height:870px;
+	vertical-align: center;
+	horizontal-align: center;
+	background-color: #2e1f2177;
+	transition-property: transform, opacity;
+	transition-duration: 0.3s;
+	transition-timing-function: ease-in-out;
+}
+
+.MenuPage.Shop.Hidden
+{
+	transform: translatex(-1000px);
+	opacity:0.0;
+}
+
+.PlayerMessage
+{
+	width:100%;
+	height: 120px;
+	background-color:gradient( linear, 0% 30%, 0% 100%, from( #60862d00 ), to( #3d5f1cff ) );
+	vertical-align:bottom;
+}
+
+#shop_page_avatar
+{
+	vertical-align:center;
+	horizontal-align: left;
+	width: height-percentage(100%);
+	height: 100%;
+	border-radius: 10px;
+}
+
+.PlayerMessagePanels
+{
+	width: 100%;
+	flow-children: right;
+	vertical-align: bottom;
+	margin-left: 110px;
+}
+
+.PlayerMessagePanel
+{
+	width:fill-parent-flow(1.0);
+	background-color:gradient( linear, 0% 0%, 0% 100%, from( #60862d ), to( #3d5f1c ) );
+	border-top: 1px solid #ffffff22;
+	border-left:1px solid #ffffff11;
+	border-right: 1px solid #00000044;
+	border-bottom: 1px solid #00000088;
+	height: 50px;
+}
+
+.PlayerMessagePanel.ChargePanel
+{
+	background-color: gradient( linear, 0% 0%, 0% 100%, from( #e0c59a ), to( #ae9249 ) );
+	width: 200px;
+	height: 50px;
+	padding: 8px 16px 4px 16px;
+}
+
+.PlayerMessagePanel.ChargePanel Label
+{
+	color: white;
+	font-weight: bold;
+	text-shadow: 1px 1px 2px black;
+	vertical-align: center;
+	font-size: 22px;
+}
+
+.PlayerMessagePanel.ChargePanel:hover:enabled
+{
+	background-color: gradient( linear, 0% 0%, 0% 100%, from( #f7d9aa ), to( #d1af58 ) );
+}
+
+.PlayerMessagePanel.ChargePanel:active
+{
+	background-color: gradient( linear, 0% 100%, 0% 0%, from( #f7d9aa ), to( #d1af58 ) );
+}
+
+.PlayerMessagePanel:hover
+{
+	brightness:2;
+}
+
+.PlayerMessagePanel:active
+{
+	brightness: 4;
+}
+
+.PlayerMessagePanel Label
+{
+	vertical-align: center;
+	horizontal-align: center;
+	color: white;
+	font-size: 25px;
+}
+
+.QueryPointsPanel:hover
+{
+	background-color:gradient( linear, 0% 0%, 0% 100%, from( #70963d ), to( #4d6f2c ) );
+}
+
+.QueryPointsPanel:disabled
+{
+	background-color:gradient( linear, 0% 0%, 0% 100%, from( lightslategray ), to( darkgray ) );
+}
+
+#shop_page_steamid
+{
+	vertical-align:center;
+	horizontal-align:center;
+}
+
+#shop_page_steamid Label
+{
+	color: white;
+	font-size: 25px;
+}
+
+.AlipayCharge
+{
+	width: 750px;
+	height: 700px;
+	vertical-align:center;
+	horizontal-align:center;
+	background-color: #1a1a1a;
+	flow-children:right;
+	box-shadow: #000 0px 0px 10px;
+	transition-property: transform, opacity;
+	transition-duration: 0.3s;
+	transition-timing-function: ease-in-out;
+	border-radius: 20px;
+	padding: 30px;
+}
+
+.ManualCharge
+{
+	width: 720px;
+	vertical-align:center;
+	horizontal-align:center;
+	background-color: white;
+	flow-children:down;
+	box-shadow: inset #000 0px 0px 20px;
+	transition-property: transform, opacity;
+	transition-duration: 0.3s;
+	transition-timing-function: ease-in-out;
+	border-radius: 20px;
+	padding: 40px;
+}
+
+.AlipayCharge.Hidden
+{
+	transform: translatey(500px);
+	opacity: 0;
+}
+
+.ChargeQRCodes
+{
+	flow-children: right;
+	horizontal-align: center;
+}
+
+.QRCodeAndCommentTooltip
+{
+	flow-children: down;
+	margin-left: 30px;
+	margin-right: 30px;
+}
+
+.QRCode
+{
+	width: 200px;
+	height: 280px;
+	vertical-align: center;
+}
+
+.CommentImage.Alipay
+{
+	width:195px;
+	height:120px;
+}
+
+.AlipayChargeTooltip
+{
+	height:100%;
+	width:500px;
+	flow-children:down;
+	margin-left: 40px;
+	vertical-align: center;
+}
+
+.ChargeTooltipImages
+{
+	flow-children: right;
+}
+
+.CommentTooltips
+{
+	width: 200px;
+	height: 130px;
+}
+
+.ChargeTooltip
+{
+	font-size: 16px;
+	color: black;
+	vertical-align: center;
+}
+
+.ChargeRedeemChargeEntry
+{
+	width:100%;
+	margin-top: 10px;
+}
+
+.RedeemButton
+{
+	horizontal-align: center;
+	margin-top: 20px;
+}
+
+.RedeemButton Label
+{
+	color: white;
+	font-size: 25px;
+}
+
+.steamid
+{
+	color: red;
+	font-weight: bolder;
+	font-size:22px;
+}
+
+.DontShow
+{
+	visibility: collapse;
+}
+
+.ShopContent
+{
+	flow-children: down;
+	width: 100%;
+	height: 750px;
+}
+
+.ShopTitle
+{
+	width: 100%;
+	height: 60px;
+	background-color: #000000cc;
+}
+
+.ShopMainTitle
+{
+	color: white;
+	font-size: 40px;
+	vertical-align: center;
+	horizontal-align:center;
+	font-weight: bolder;
+	text-transform: uppercase;
+}
+
+.ShopSubTitle
+{
+	color: limegreen;
+	font-size: 25px;
+	vertical-align: center;
+	horizontal-align:center;
+	font-weight: lighter;
+	margin-left: 400px;
+	margin-top: 20px;
+}
+
+#point_get_method_message
+{
+	color: white;
+	margin-left: 160px;
+}
+
+.TradeHistory
+{
+	flow-children: down;
+	overflow:scroll;
+	vertical-align: bottom;
+	horizontal-align: center;
+	margin-bottom: 130px;
+	background-color: #000000cc;
+	transition-property: transform, opacity;
+	transition-timing-function: ease-in-out;
+	transition-duration: 0.3s;
+}
+
+.TradeHistory.Hidden
+{
+	transform: translatey(400px);
+	opacity:0;
+}
+
+.TradeItemRoot
+{
+	flow-children: right;
+	horizontal-align: center;
+}
+
+.TradeItemRoot Label
+{
+	width: 200px;
+	background-color: #3b6cd0aa;
+	color: black;
+	font-size: 28px;
+	text-align: center;
+	text-overflow: clip;
+	border: 1px solid black;
+	font-family: Goudy Trajan Medium,FZKai-Z03,TH Sarabun New,YDYGO 540;
+}
+
+.EvenRow Label
+{
+	background-color: #181a1ecc;
+	color: white;
+}
+
+.AmountAdd
+{
+	color: #0d570d;
+}
+
+.AmountReduce
+{
+	color:#7a3535;
+}
+
+.ShopItems
+{
+	width: 100%;
+	height: 95%;
+	flow-children: right-wrap;
+	overflow:squish scroll;
+	padding: 20px;
+}
+
+.ShopItemRoot
+{
+	border: 1px solid #3b6cd0;
+	background-color: #000000aa;
+	width: 220px;
+	height: 320px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+.ShopItemTitlePanel
+{
+	height: 60px;
+	horizontal-align: center;
+	width: 80%;
+}
+
+.ShopItemTitle
+{
+	vertical-align: center;
+	font-size: 20px;
+	color: white;
+	horizontal-align: center;
+}
+
+.ShopItemImagePanel
+{
+	vertical-align: center;
+	horizontal-align: center;
+}
+
+.ShopItemImage
+{
+	width: 200px;
+	height: 200px;
+	opacity-mask:url("s2r://panorama/images/custom_game/menu/shop_item_mask_psd.vtex");
+}
+
+.PurchaseButton
+{
+	background-color:gradient( linear, 0% 0%, 0% 100%, from( #60862d ), to( #3d5f1c ) );
+	border-top: 1px solid #ffffff22;
+	border-left:1px solid #ffffff11;
+	border-right: 1px solid #00000044;
+	border-bottom: 1px solid #00000088;
+	height: 40px;
+	width: 80%;
+	horizontal-align: center;
+	vertical-align: bottom;
+	margin-bottom: 10px;
+}
+
+.NotEnoughPoints .PurchaseButton
+{
+	background-color:gradient( linear, 0% 0%, 0% 100%, from( #30261d ), to( #1d1f0c ) );
+}
+
+.Owned .PurchaseButton
+{
+	background-color:gradient( linear, 0% 0%, 0% 100%, from( #30261d ), to( #1d1f0c ) );
+}
+
+.PurchaseButton:hover
+{
+	brightness:4;
+}
+
+#purchase_cost_text
+{
+	vertical-align: center;
+	horizontal-align: center;
+	color: white;
+}
+
+..NotEnoughPoints #purchase_cost_text
+{
+	color: #222;
+}
+
+.ConfirmPurchaseDialog.Hidden
+{
+	transform: translatey(200px);
+	opacity: 0;
+	pre-transform-scale2d: 0.3;
+}
+
+.ConfirmPurchaseDialog
+{
+	vertical-align: center;
+	horizontal-align:center;
+	padding: 50px;
+	width: 600px;
+	height: 400px;
+	background-color: #000000ee;
+	border: 1px solid #3b6cd0;
+	transition-property: transform, opacity, pre-transform-scale2d;
+	transition-duration: 0.3s;
+	transition-timing-function: ease-in-out;
+}
+
+#confirm_purchase
+{
+	font-size: 25px;
+	color: white;
+	margin-top: 20px;
+}
+
+.ConfirmPurchaseButtons
+{
+	flow-children: right;
+	vertical-align: bottom;
+	margin-bottom: 20px;
+	horizontal-align: center;
+}
+
+#button_cancel
+{
+	margin-left: 40px;
+	background-color:gradient( linear, 0% 0%, 0% 100%, from( #94262d ), to( #ed5f1c ) );
+}
+
+#button_confirm
+{
+	background-color:gradient( linear, 0% 0%, 0% 100%, from( #60862d ), to( #3d5f1c ) );
+}
+
+.SaleOverlay
+{
+	background-image:url("s2r://panorama/images/custom_game/econ/discount_png.vtex");
+	width: 90px;
+	height: 100px;
+	background-size:100% 100%;
+	vertical-align: top;
+	horizontal-align: left;
+	margin-top:15px;
+}
+
+.OwnedOverlay
+{
+	background-image:url("s2r://panorama/images/custom_game/econ/owned_png.vtex");
+	width: 60px;
+	height: 60px;
+	background-size: 100% 100%;
+	vertical-align: top;
+	horizontal-align: right;
+	visibility: collapse;
+}
+
+.Owned .OwnedOverlay
+{
+	visibility: visible;
+}
+
+.Owned .PreviewButton
+{
+	visibility: collapse;
+}
+
+.PreviewButton
+{
+	vertical-align: bottom;
+	horizontal-align: right;
+	width: 50px;
+	height: 50px;
+	margin-bottom: 15px;
+	margin-right: 15px;
+}
+
+.PreviewButton:hover
+{
+	brightness:2;
+	margin-bottom: 18px;
+}
+

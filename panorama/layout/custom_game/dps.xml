@@ -1,0 +1,29 @@
+<!-- xml reconstructed by Source 2 Viewer 19.1.0.0 - https://valveresourceformat.github.io -->
+<root>
+	<scripts>
+		<include src="s2r://panorama/scripts/custom_game/dps.vjs_c" />
+	</scripts>
+	<styles>
+		<include src="s2r://panorama/styles/custom_game/dps.vcss_c" />
+	</styles>
+	<snippets>
+		<snippet name="DPSPlayer">
+			<Panel class="DPSPanelRoot">
+				<Panel class="DPSPanelBackground" />
+				<Panel id="dps_bar" />
+				<Panel class="HeroAndAvatar">
+					<DOTAHeroImage heroname="npc_dota_hero_axe" heroimagestyle="landscape" id="player_hero" />
+					<DOTAAvatarImage class="PlayerAvatar" steamid="local" id="player_avatar" />
+				</Panel>
+				<Panel class="HeroAndUserName">
+					<Label id="hero_name" text="#npc_dota_hero_axe" />
+					<DOTAUserName id="player_name" steamid="local" />
+				</Panel>
+				<Panel class="DPSValueContainer">
+					<Label id="dps_value" text="0" />
+				</Panel>
+			</Panel>
+		</snippet>
+	</snippets>
+	<Panel class="DPSPanel Hidden" hittestchildren="false" hittest="false" />
+</root>

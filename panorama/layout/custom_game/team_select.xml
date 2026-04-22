@@ -1,0 +1,159 @@
+<!-- xml reconstructed by Source 2 Viewer 19.1.0.0 - https://valveresourceformat.github.io -->
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/custom_game/dotastyles.vcss_c" />
+		<include src="s2r://panorama/styles/battle_pass/current_battle_pass.vcss_c" />
+		<include src="s2r://panorama/styles/custom_game/team_select.vcss_c" />
+		<include src="s2r://panorama/styles/custom_game/vote_for_kills.vcss_c" />
+	</styles>
+	<scripts>
+		<include src="s2r://panorama/scripts/custom_game/team_select.vjs_c" />
+		<include src="s2r://panorama/scripts/custom_game/vote_for_kills.vjs_c" />
+	</scripts>
+	<Panel hittest="false" class="TeamSelect">
+		<Panel hittest="false" id="TeamSelectContainer" selectionpos="auto">
+			<Panel hittest="false" id="TeamsSelectEmptySpace" />
+			<Panel id="TeamsList">
+				<Panel id="TeamsListGroup">
+					<Panel id="TeamListHeader">
+						<Label id="TeamListHeaderLabel" text="#custom_game_team_select" />
+						<Image id="TeamListLockedIcon" src="s2r://panorama/images/control_icons/lock_small_png.vtex" />
+					</Panel>
+					<Panel id="TeamListLegends">
+						<Label id="TeamListLegend_PlayerName" class="Col_PlayerName" text="#team_select_legend_player_name" />
+						<Label class="Col_Rating" text="#team_select_legend_rating" />
+						<Label class="Col_MatchCount" text="#team_select_match_count" />
+						<Label class="Col_Top1Count" text="#team_select_top1_count" />
+						<Label class="Col_Top3Count" text="#team_select_top3_count" />
+						<Label class="Col_DisconnectCount" text="#team_select_disconnect_count" />
+						<Label class="Col_AverageKDA" text="#team_select_average_kda" />
+						<Label class="Col_LeaveTeam" text="#team_select_leave_team" />
+					</Panel>
+					<Panel id="TeamsListRoot" />
+					<Button id="ShuffleTeamAssignmentButton" class="UnderTeamButton" onactivate="OnShufflePlayersPressed()">
+						<Label text="#custom_game_team_select_shuffle" />
+						<Image src="s2r://panorama/images/control_icons/shuffle_psd.vtex" />
+					</Button>
+				</Panel>
+				<Panel id="GameSetup_ChooseKillsToWin_Title">
+					<Label class="KillsToWinTitle" text="#vote_for_kills_to_win" />
+				</Panel>
+				<Panel class="KillsToWinVoteOptions">
+					<Panel class="KillsToWinVoteOption" onactivate="VoteFor(1)">
+						<Label class="KillsToWinOptionLabel" text="999" id="vote_options_1" />
+						<Panel class="KillsToWinVotedPlayers" id="vote_players_1">
+							<DOTAAvatarImage steamid="local" class="VotePlayerAvatar" />
+							<DOTAAvatarImage steamid="local" class="VotePlayerAvatar" />
+							<DOTAAvatarImage steamid="local" class="VotePlayerAvatar" />
+							<DOTAAvatarImage steamid="local" class="VotePlayerAvatar" />
+							<DOTAAvatarImage steamid="local" class="VotePlayerAvatar" />
+							<DOTAAvatarImage steamid="local" class="VotePlayerAvatar" />
+							<DOTAAvatarImage steamid="local" class="VotePlayerAvatar" />
+							<DOTAAvatarImage steamid="local" class="VotePlayerAvatar" />
+							<DOTAAvatarImage steamid="local" class="VotePlayerAvatar" />
+							<DOTAAvatarImage steamid="local" class="VotePlayerAvatar" />
+						</Panel>
+					</Panel>
+					<Panel class="KillsToWinVoteOption" onactivate="VoteFor(2)">
+						<Label class="KillsToWinOptionLabel" text="999" id="vote_options_2" />
+						<Panel class="KillsToWinVotedPlayers" id="vote_players_2">
+							<DOTAAvatarImage steamid="local" class="VotePlayerAvatar" />
+							<DOTAAvatarImage steamid="local" class="VotePlayerAvatar" />
+							<DOTAAvatarImage steamid="local" class="VotePlayerAvatar" />
+							<DOTAAvatarImage steamid="local" class="VotePlayerAvatar" />
+							<DOTAAvatarImage steamid="local" class="VotePlayerAvatar" />
+							<DOTAAvatarImage steamid="local" class="VotePlayerAvatar" />
+							<DOTAAvatarImage steamid="local" class="VotePlayerAvatar" />
+							<DOTAAvatarImage steamid="local" class="VotePlayerAvatar" />
+							<DOTAAvatarImage steamid="local" class="VotePlayerAvatar" />
+							<DOTAAvatarImage steamid="local" class="VotePlayerAvatar" />
+						</Panel>
+					</Panel>
+					<Panel class="KillsToWinVoteOption" onactivate="VoteFor(3)">
+						<Label class="KillsToWinOptionLabel" text="999" id="vote_options_3" />
+						<Panel class="KillsToWinVotedPlayers" id="vote_players_3">
+							<DOTAAvatarImage steamid="local" class="VotePlayerAvatar" />
+							<DOTAAvatarImage steamid="local" class="VotePlayerAvatar" />
+							<DOTAAvatarImage steamid="local" class="VotePlayerAvatar" />
+							<DOTAAvatarImage steamid="local" class="VotePlayerAvatar" />
+							<DOTAAvatarImage steamid="local" class="VotePlayerAvatar" />
+							<DOTAAvatarImage steamid="local" class="VotePlayerAvatar" />
+							<DOTAAvatarImage steamid="local" class="VotePlayerAvatar" />
+							<DOTAAvatarImage steamid="local" class="VotePlayerAvatar" />
+							<DOTAAvatarImage steamid="local" class="VotePlayerAvatar" />
+							<DOTAAvatarImage steamid="local" class="VotePlayerAvatar" />
+						</Panel>
+					</Panel>
+					<Panel class="KillsToWinVoteOption VoteForAgreeToShuffle" onactivate="AgreeToShuffle()">
+						<Label class="KillsToWinOptionLabel" text="#agree_to_shuffle" id="vote_for_agree_to_shuffle" />
+						<Panel class="KillsToWinVotedPlayers" id="vote_agree_to_shuffle">
+							<DOTAAvatarImage steamid="local" class="VotePlayerAvatar" />
+							<DOTAAvatarImage steamid="local" class="VotePlayerAvatar" />
+							<DOTAAvatarImage steamid="local" class="VotePlayerAvatar" />
+							<DOTAAvatarImage steamid="local" class="VotePlayerAvatar" />
+							<DOTAAvatarImage steamid="local" class="VotePlayerAvatar" />
+							<DOTAAvatarImage steamid="local" class="VotePlayerAvatar" />
+							<DOTAAvatarImage steamid="local" class="VotePlayerAvatar" />
+							<DOTAAvatarImage steamid="local" class="VotePlayerAvatar" />
+							<DOTAAvatarImage steamid="local" class="VotePlayerAvatar" />
+							<DOTAAvatarImage steamid="local" class="VotePlayerAvatar" />
+						</Panel>
+					</Panel>
+					<Panel id="free_model_panel" class="KillsToWinVoteOption VoteForFreeMode" onactivate="VoteForFreeMode()" onmouseover="$.DispatchEvent(&apos;DOTAShowTextTooltip&apos;, $(&apos;#free_model_panel&apos;), &apos;#free_mode_tooltip&apos;);" onmouseout="$.DispatchEvent(&apos;DOTAHideTextTooltip&apos;)">
+						<Label class="KillsToWinOptionLabel" text="#free_mode" id="bom_free_mode" />
+						<Panel class="KillsToWinVotedPlayers" id="vote_free_mode">
+							<DOTAAvatarImage steamid="local" class="VotePlayerAvatar" />
+							<DOTAAvatarImage steamid="local" class="VotePlayerAvatar" />
+							<DOTAAvatarImage steamid="local" class="VotePlayerAvatar" />
+							<DOTAAvatarImage steamid="local" class="VotePlayerAvatar" />
+							<DOTAAvatarImage steamid="local" class="VotePlayerAvatar" />
+							<DOTAAvatarImage steamid="local" class="VotePlayerAvatar" />
+							<DOTAAvatarImage steamid="local" class="VotePlayerAvatar" />
+							<DOTAAvatarImage steamid="local" class="VotePlayerAvatar" />
+							<DOTAAvatarImage steamid="local" class="VotePlayerAvatar" />
+							<DOTAAvatarImage steamid="local" class="VotePlayerAvatar" />
+						</Panel>
+					</Panel>
+				</Panel>
+			</Panel>
+			<Panel id="GameAndPlayersRoot">
+				<Panel id="GameInfoPanel">
+					<Panel id="CustomGameModeName">
+						<Label id="GameModeNameLabel" text="#addon_game_name" />
+					</Panel>
+					<Panel id="MapInfo">
+						<Label id="MapInfoLabel" text="#LoadingScreenMapInfo" />
+					</Panel>
+					<Panel id="StartGameCountdownTimer">
+						<Image id="TimerBg" src="s2r://panorama/images/status_icons/timer_background_psd.vtex" />
+						<Image id="TimerRing" src="s2r://panorama/images/status_icons/timer_ring_psd.vtex" />
+						<Label id="TeamSelectTimer" text="#custom_game_team_select_timer" />
+						<Panel id="TimerLabelBox">
+							<Label id="TimerLabelAutoStart" text="#custom_game_team_select_auto_start" />
+							<Label id="TimerLabelGameStart" text="#custom_game_team_select_starting" />
+						</Panel>
+					</Panel>
+				</Panel>
+				<Panel id="UnassignedPlayerPanel">
+					<Button id="UnassignedPlayersButton" onactivate="OnLeaveTeamPressed()">
+						<Panel id="UnassignedPlayersHeader">
+							<Label text="#custom_game_team_select_unassigned_players" />
+						</Panel>
+						<Panel id="UnassignedPlayersDivider" />
+						<Panel id="UnassignedPlayersContainer" />
+					</Button>
+					<Button id="AutoAssignButton" onactivate="OnAutoAssignPressed()">
+						<Image src="s2r://panorama/images/control_icons/double_arrow_left_png.vtex" />
+						<Label text="#custom_game_team_select_auto_assign" />
+					</Button>
+				</Panel>
+				<Button id="LockAndStartButton" class="PlayButton" onactivate="OnLockAndStartPressed()">
+					<Label text="#custom_game_team_select_lock_start" />
+				</Button>
+				<Button id="CancelAndUnlockButton" class="PlayButton" onactivate="OnCancelAndUnlockPressed()">
+					<Label text="#custom_game_team_select_cancel_unlock" />
+				</Button>
+			</Panel>
+		</Panel>
+	</Panel>
+</root>

@@ -1,0 +1,263 @@
+/* Prettified by Source 2 Viewer 19.1.0.0 - https://valveresourceformat.github.io */
+
+.PaymentRoot
+{
+	width: 100%;
+	height: 100%;
+}
+
+.line
+{
+	flow-children: right;
+}
+
+.center
+{
+	horizontal-align: center;
+}
+
+.margin-sm
+{
+	margin: 10px;
+}
+
+#InputPage,#HtmlPage
+{
+	horizontal-align: center;
+	vertical-align: middle;
+	transition-property: opacity, transform;
+	transition-duration: 0.3s;
+}
+
+#InputPage
+{
+	flow-children: down;
+}
+
+#InputPage .t1
+{
+	horizontal-align: center;
+	margin: 10px;
+}
+
+#InputPage .t2
+{
+	horizontal-align: center;
+	flow-children: right;
+}
+
+#AvalonCoinPanel
+{
+	width: 120px;
+	background-color: #000;
+	vertical-align: middle;
+	border: 1px solid #FFED83;
+}
+
+#AvalonCoin
+{
+	width: fit-children;
+	background-color: none;
+	text-align: right;
+	text-overflow: clip;
+	horizontal-align: center;
+	border: 0;
+	transform: translateX(6px);
+	font-size: 25px;
+	min-width: 20px;
+	color: gradient( linear, 0% 100%, 0% 0%, from( #FFED83 ), to( #DE8B00 ) );
+}
+
+#InputPage .title
+{
+	font-size: 30px;
+	color: gradient( linear, 0% 100%, 0% 0%, from( #FFED83 ), to( #DE8B00 ) );
+	vertical-align: middle;
+}
+
+#PrePayButton
+{
+	horizontal-align: center;
+	margin: 20px;
+	flow-children: down;
+}
+
+#PrePayButton .title
+{
+	font-size: 20px;
+	color: gradient( linear, 0% 100%, 0% 0%, from( #FFED83 ), to( #DE8B00 ) );
+	text-shadow: #000 0px 0px 4px 1.0;
+	margin-top: 2px;
+	horizontal-align: center;
+}
+
+#PrePayButton .pay-btn
+{
+	padding: 10px 15px;
+	flow-children: right;
+	border-radius: 5px;
+}
+
+#PrePayButton .pay-btn.alipay
+{
+	background-color: #108EE9;
+}
+
+#PrePayButton .pay-btn.wechatpay
+{
+	background-color: #3eb94e;
+	margin-left: 10px;
+}
+
+#PrePayButton .pay-btn Image
+{
+	width: 20px;
+	height: 20px;
+}
+
+#PrePayButton .pay-btn Label
+{
+	font-size: 20px;
+	color: #fff;
+	margin-left: 5px;
+}
+
+#PrePayButton .pay-btn.alipay:hover
+{
+	box-shadow: #108EE9 0px 0px 4px;
+}
+
+#PrePayButton .pay-btn.wechatpay:hover
+{
+	box-shadow: #3eb94e 0px 0px 4px;
+}
+
+#PrePayButton .pay-btn:active
+{
+	transform: scale3d(0.9,0.9,1);
+}
+
+#AddAvalonCoin
+{
+	horizontal-align: center;
+	margin-top: 15px;
+	flow-children: right;
+}
+
+#AddAvalonCoin .btn
+{
+	background-color: #414141;
+	padding: 2px 4px;
+	border-radius: 5px;
+	margin: 0px 3px;
+}
+
+#AddAvalonCoin .btn Label
+{
+	margin-top: 3px;
+	color: gradient( linear, 0% 100%, 0% 0%, from( #FFED83 ), to( #DE8B00 ) );
+}
+
+#AddAvalonCoin .btn:hover
+{
+	brightness: 2;
+}
+
+#AddAvalonCoin .btn:active
+{
+	transform: scale3d(0.9,0.9,1);
+}
+
+#HtmlPage
+{
+	flow-children: down;
+	padding: 20px;
+}
+
+#Html
+{
+	width: 850px;
+	height: 350px;
+	background-color: #fff;
+}
+
+#url_entry
+{
+	margin-bottom: 15px;
+	width: 100%;
+}
+
+.BottomButtons
+{
+	flow-children: right;
+	horizontal-align: center;
+}
+
+.GoBackButton
+{
+	padding: 5px 15px;
+	margin-left: 20px;
+	margin-right: 20px;
+	border-radius: 3px;
+	margin-top: 10px;
+	background-color: gradient(linear, 0% 100%, 0% 0%, from(#3F0600), to(#5B0900));
+}
+
+.GoBackButton:hover
+{
+	box-shadow: #A41C00 0px 0px 5px;
+}
+
+.GoBackButton Label
+{
+	color: #fff;
+	font-size: 20px;
+}
+
+#CloseButton
+{
+	padding: 15px 35px;
+	margin-left: 10px;
+	flow-children: right;
+	border-radius: 100px;
+	border: 1px solid #000;
+	background-color: #3333;
+}
+
+#CloseButton > Image
+{
+	width: 40px;
+	height: 40px;
+}
+
+#CloseButton > Label
+{
+	color: #fff;
+	font-size: 30px;
+	vertical-align: middle;
+}
+
+#CloseButton:hover
+{
+	background-color: #12121f99;
+}
+
+#HtmlPageTip
+{
+	color: #AAA;
+	margin-top: 20px;
+	horizontal-align: center;
+}
+
+#PayTip
+{
+	color: #aaa;
+	margin-top: 15px;
+	text-align: center;
+}
+
+#manual_charge_button
+{
+	visibility: collapse;
+}
+

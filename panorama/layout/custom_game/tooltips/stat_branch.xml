@@ -1,0 +1,88 @@
+<root>
+    <styles>
+        <include src="s2r://panorama/styles/dotastyles.vcss_c" />
+        <include src="s2r://panorama/styles/hud/dota_hud_stat_branch.vcss_c" />
+        <include src="s2r://panorama/layout/custom_game/tooltips/stat_branch.vcss_c" />
+    </styles>
+    <scripts>
+        <include src="s2r://panorama/layout/custom_game/tooltips/stat_branch.vjs_c" />
+    </scripts>
+    <Panel class="StatBranchCenter" onload="setupTooltip()" ontooltiploaded="setupTooltip()">
+        <Label id="xTooltipBranchTitle" text="#DOTA_StatBranch_TooltipTitle"/>
+        <Panel id="xStatBranchColumn" class="TopBottomFlow">
+            <Panel id="UpgradeOption4" class="BranchPair">
+                <Panel id="Upgrade8Container" hittest="false" class="UpgradeContainer">
+                    <Button id="Upgrade8" class="BranchChoice LeftBranch">				
+                        <Label html="true" class="StatBonusLabel" text="{s:name_8}" id="branch_name_8" />
+                    </Button>
+                </Panel>
+
+                <Panel id="Upgrade7Container" hittest="false" class="UpgradeContainer">
+                    <Button id="Upgrade7" class="BranchChoice RightBranch">
+                        <Label class="StatBonusLabel" html="true" text="{s:name_7}" id="branch_name_7" />
+                    </Button>
+                    
+                    
+                </Panel>
+            </Panel>
+
+            <Panel id="UpgradeOption3" class="BranchPair">
+                <Panel id="Upgrade6Container" hittest="false" class="UpgradeContainer">
+                    <Button id="Upgrade6" class="BranchChoice LeftBranch">
+                        <Label class="StatBonusLabel" html="true" text="{s:name_6}" id="branch_name_6" />
+                    </Button>
+                </Panel>
+
+                <Panel id="Upgrade5Container" hittest="false" class="UpgradeContainer">
+                    <Button id="Upgrade5" class="BranchChoice RightBranch">
+                        <Label class="StatBonusLabel" html="true" text="{s:name_5}" id="branch_name_5" />
+                    </Button>
+                </Panel>
+            </Panel>
+
+            <Panel id="UpgradeOption2" class="BranchPair">
+                <Panel id="Upgrade4Container" hittest="false"  class="UpgradeContainer">
+            
+                    <Button id="Upgrade4" class="BranchChoice LeftBranch">
+                        <Label class="StatBonusLabel" html="true" text="{s:name_4}" id="branch_name_4" />
+                    </Button>
+                </Panel>
+
+                <Panel id="Upgrade3Container" hittest="false" class="UpgradeContainer">
+                    <Button id="Upgrade3" class="BranchChoice RightBranch">
+                        <Label class="StatBonusLabel" html="true" text="{s:name_3}" id="branch_name_3" />
+                    </Button>
+                </Panel>
+            </Panel>
+
+            <Panel id="UpgradeOption1" class="BranchPair">
+                <Panel id="Upgrade2Container" hittest="false" class="UpgradeContainer">
+            
+                    <Button id="Upgrade2" class="BranchChoice LeftBranch">
+                        <Label class="StatBonusLabel" html="true" text="{s:name_2}" id="branch_name_2" />
+                    </Button>
+                </Panel>
+
+                <Panel id="Upgrade1Container" hittest="false"  class="UpgradeContainer">
+                    <Button id="Upgrade1" class="BranchChoice RightBranch">
+                        <Label class="StatBonusLabel" html="true" text="{s:name_1}" id="branch_name_1" />
+                    </Button>
+                </Panel>
+            </Panel>
+        </Panel>
+        <Panel id="xLevelColumn" class="TopBottomFlow">
+            <Panel class="LevelBG">
+                <Label text="25" class="ReqLabel"/>
+            </Panel>
+            <Panel class="LevelBG">
+                <Label text="20" class="ReqLabel"/>
+            </Panel>
+            <Panel class="LevelBG">
+                <Label text="15" class="ReqLabel"/>
+            </Panel>
+            <Panel class="LevelBG">
+                <Label text="10" class="ReqLabel"/>
+            </Panel>
+        </Panel>
+    </Panel>
+</root>

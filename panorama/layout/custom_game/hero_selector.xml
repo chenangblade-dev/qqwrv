@@ -1,0 +1,44 @@
+<!-- xml reconstructed by Source 2 Viewer 19.1.0.0 - https://valveresourceformat.github.io -->
+<root>
+	<scripts>
+		<include src="s2r://panorama/scripts/custom_game/talents.vjs_c" />
+		<include src="s2r://panorama/scripts/custom_game/hero_selector.vjs_c" />
+	</scripts>
+	<styles>
+		<include src="s2r://panorama/styles/dotastyles.vcss_c" />
+		<include src="s2r://panorama/styles/custom_game/hero_selector.vcss_c" />
+		<include src="s2r://panorama/styles/dotastyles.vcss_c" />
+	</styles>
+	<Panel class="HeroSelectorRoot" hittest="false">
+		<Panel class="HeroSelectionPanel" id="hero_selector_panel">
+			<Panel class="HeroSelectorPanelHeader" />
+			<Panel class="HeroSelectorContents">
+				<Label class="HeroSelectorTitle" text="#hero_selector_title" />
+				<Panel class="HeroSelector_HeroCards">
+					<Panel class="HeroSelector_HeroCard" id="hero_card_1">
+						<Panel id="hero_portrait_container_1" class="HeroPortraitContainer" onactivate="OnSelect(1)" />
+						<Label id="hero_name_1" text="#npc_dota_hero_abaddon" />
+					</Panel>
+					<Panel class="HeroSelector_HeroCard" id="hero_card_2">
+						<Panel id="hero_portrait_container_2" class="HeroPortraitContainer" onactivate="OnSelect(2)" />
+						<Label id="hero_name_2" text="#npc_dota_hero_abaddon" />
+					</Panel>
+					<Panel class="HeroSelector_HeroCard" id="hero_card_3">
+						<Panel id="hero_portrait_container_3" class="HeroPortraitContainer" onactivate="OnSelect(3)" />
+						<Label id="hero_name_3" text="#npc_dota_hero_abaddon" />
+					</Panel>
+				</Panel>
+				<Panel class="Buttons">
+					<Button id="vip_reselect_button" class="ButtonBevel ButtonReRandom" onactivate="ReRandom()">
+						<Image src="s2r://panorama/images/custom_game/hud/locked_png.vtex" />
+						<Label text="#rerandom" />
+					</Button>
+					<Button id="ignore_button" class="ButtonBevel ButtonCancel" onactivate="Cancel()">
+						<Label text="#dont_want" />
+					</Button>
+				</Panel>
+			</Panel>
+			<Panel class="HeroSelectorPanelFooter" />
+		</Panel>
+	</Panel>
+</root>

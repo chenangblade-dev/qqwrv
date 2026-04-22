@@ -1,0 +1,54 @@
+/* Prettified by Source 2 Viewer 19.1.0.0 - https://valveresourceformat.github.io */
+
+@define LighterGrey: #aaaaaa;
+@define LightestGrey: #999999;
+@define DarkerGrey: #66666;
+@define DarkestGrey: #33333;
+.Resource
+{
+	background-image:url("s2r://panorama/images/custom_game/stars/star_empty_png.vtex");
+	background-image:url("s2r://panorama/images/custom_game/stars/star_full_png.vtex");
+	background-image:url("s2r://panorama/images/custom_game/creep_mega/bom_xiaolu_png.vtex");
+	background-image:url("s2r://panorama/images/custom_game/econ/darkmoon_png.vtex");
+	background-image:url("s2r://panorama/images/custom_game/econ/lava_trail_png.vtex");
+	background-image:url("s2r://panorama/images/custom_game/econ/paltinum_baby_roshan_png.vtex");
+	background-image:url("s2r://panorama/images/custom_game/econ/legion_wings_png.vtex");
+	background-image:url("s2r://panorama/images/custom_game/econ/legion_wings_vip_png.vtex");
+	background-image:url("s2r://panorama/images/custom_game/econ/legion_wings_pink_png.vtex");
+	background-image:url("s2r://panorama/images/custom_game/econ/sf_wings_png.vtex");
+	background-image:url("s2r://panorama/images/custom_game/econ/sakura_trail_png.vtex");
+	background-image:url("s2r://panorama/images/custom_game/econ/question_mark_png.vtex");
+	background-image:url("s2r://panorama/images/custom_game/econ/jibururen_mark_png.vtex");
+	background-image:url("s2r://panorama/images/custom_game/econ/green_png.vtex");
+	background-image:url("s2r://panorama/images/custom_game/econ/golden_ti7_png.vtex");
+	background-image:url("s2r://panorama/images/custom_game/econ/shengfaji_png.vtex");
+	background-image:url("s2r://panorama/images/custom_game/econ/terror_wings_png.vtex");
+	background-image:url("s2r://panorama/images/custom_game/econ/devil_circle_png.vtex");
+	background-image:url("s2r://panorama/images/custom_game/econ/dy_label_png.vtex");
+	background-image:url("s2r://panorama/images/custom_game/econ/dy_new_1_png.vtex");
+	background-image:url("s2r://panorama/images/custom_game/econ/dy_new_2_png.vtex");
+	background-image:url("s2r://panorama/images/custom_game/econ/dy_new_3_png.vtex");
+	background-image:url("s2r://panorama/images/custom_game/econ/pd_label_png.vtex");
+	background-image:url("s2r://panorama/images/custom_game/econ/ethereal_flame_golden_png.vtex");
+	background-image:url("s2r://panorama/images/custom_game/econ/ethereal_flame_pink_png.vtex");
+	background-image:url("s2r://panorama/images/custom_game/econ/ethereal_flame_white_png.vtex");
+	background-image:url("s2r://panorama/images/custom_game/econ/huaji_png.vtex");
+	background-image:url("s2r://panorama/images/custom_game/econ/rank_top10_png.vtex");
+	background-image:url("s2r://panorama/images/custom_game/econ/rich_png.vtex");
+	background-image:url("s2r://panorama/images/custom_game/econ/juemingyiji_png.vtex");
+	background-image:url("s2r://panorama/images/custom_game/econ/bbjl_png.vtex");
+	background-image:url("s2r://panorama/images/custom_game/econ/water_curtain_png.vtex");
+	background-image:url("s2r://panorama/images/custom_game/econ/rainbow_tail_png.vtex");
+	background-image:url("s2r://panorama/images/custom_game/econ/rainbow_taunt_png.vtex");
+	background-image:url("s2r://panorama/images/custom_game/econ/goldsky_wings_png.vtex");
+	background-image:url("s2r://panorama/images/custom_game/econ/summer_2021_png.vtex");
+	background-image:url("s2r://panorama/images/custom_game/econ/virtus_werebear_t3_png.vtex");
+	background-image:url("s2r://panorama/images/custom_game/econ/courier_platinum_baby_roshan_png.vtex");
+	background-image:url("s2r://panorama/images/custom_game/econ/darkmoon_baby_roshan_png.vtex");
+	background-image:url("s2r://panorama/images/custom_game/econ/summer_2021_emblem_png.vtex");
+	background-image:url("s2r://panorama/images/custom_game/econ/pumpkin_head_png.vtex");
+	background-image:url("s2r://panorama/images/custom_game/econ/invoker_orbs_png.vtex");
+	background-image:url("s2r://");
+	background-image:url("s2r://panorama/images/custom_game/econ/jugger_jq_red_png.vtex");
+}
+

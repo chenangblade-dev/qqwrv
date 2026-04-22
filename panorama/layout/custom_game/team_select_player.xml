@@ -1,0 +1,24 @@
+<!-- xml reconstructed by Source 2 Viewer 19.1.0.0 - https://valveresourceformat.github.io -->
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/dotastyles.vcss_c" />
+		<include src="s2r://panorama/styles/custom_game/team_select.vcss_c" />
+	</styles>
+	<scripts>
+		<include src="s2r://panorama/scripts/custom_game/team_select_player.vjs_c" />
+	</scripts>
+	<Panel class="TeamSelectPlayer">
+		<Panel class="Col_PlayerName">
+			<DOTAAvatarImage id="PlayerAvatar" />
+			<Label id="PlayerIsHostPanel" />
+			<Label id="PlayerName" text="PLAYER_NAME" />
+		</Panel>
+		<Label id="EloLabel" text="-----" class="Col_Rating" />
+		<Label id="MatchCountLabel" text="---" class="Col_MatchCount" />
+		<Label id="Top1Label" text="---" class="Col_Top1Count" />
+		<Label id="Top3Label" text="---" class="Col_Top3Count" />
+		<Label id="DCLabel" text="--" class="Col_DisconnectCount" />
+		<Label id="AverageKDALabel" text="-.--" class="Col_AverageKDA" />
+		<Button id="PlayerLeaveTeamButton" onactivate="OnLeaveTeamPressed()" />
+	</Panel>
+</root>

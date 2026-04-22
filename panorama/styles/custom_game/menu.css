@@ -1,0 +1,213 @@
+/* Prettified by Source 2 Viewer 19.1.0.0 - https://valveresourceformat.github.io */
+
+.menu_Root
+{
+	width: 100%;
+	height: 100%;
+}
+
+.PlusButton
+{
+	visibility: collapse;
+}
+
+.PlusButton
+{
+	visibility: visible;
+}
+
+.MenuItems
+{
+	flow-children: down;
+	horizontal-align: right;
+	vertical-align: bottom;
+	margin-bottom: 120px;
+	transition-property: opacity, transform;
+	transition-duration: 0.5s;
+	transition-timing-function: ease-in-out;
+	opacity: 1;
+	visibility: collapse;
+}
+
+.HUDFlipped .MenuItems
+{
+	horizontal-align: left;
+}
+
+.MenuItems
+{
+	visibility: visible;
+}
+
+.MenuItems.Hidden
+{
+	opacity: 0;
+	transform: translateY(200px);
+}
+
+.HUDFlipped .MenuItem
+{
+	horizontal-align:right;
+}
+
+.MenuItem
+{
+	width: 80px;
+	height: 80px;
+	horizontal-align: right;
+	transition-property: transform;
+	transition-duration: 0.3s;
+	transition-timing-function: ease-in-out;
+}
+
+.MenuItem:hover
+{
+	brightness:2;
+}
+
+.MenuItem:active
+{
+	sound: "ui_player_beacon_appear";
+}
+
+.CollectionImage
+{
+	width: 227px;
+	height: 227px;
+}
+
+.MenuItem #MenuItemOverlay
+{
+	width: 100%;
+	height: 100%;
+}
+
+.MenuItem:hover .MenuTextBackground
+{
+	background-color: #eacb09;
+}
+
+.MenuTextBackground
+{
+	width: 90px;
+	height: 24px;
+	horizontal-align: center;
+	vertical-align: bottom;
+	margin-bottom: -5px;
+	background-color: #000000;
+}
+
+.MenuText
+{
+	font-size: 16px;
+	color: #ffffff;
+	text-align: center;
+	horizontal-align: center;
+	vertical-align: bottom;
+	margin-bottom: -3px;
+}
+
+.Language_schinese .MenuText
+{
+	font-size: 16px;
+}
+
+#MenuItem_Payment
+{
+	visibility: visible;
+}
+
+#MenuItem_Plus
+{
+	visibility: collapse;
+}
+
+#MenuItem_Plus
+{
+	visibility: visible;
+}
+
+.DemoHeroScene
+{
+	width: 500px;
+	height: 500px;
+}
+
+.MenuHitListener
+{
+	width: 100%;
+	height: 100%;
+	visibility: visible;
+}
+
+.MenuHidden.MenuHitListener
+{
+	visibility: collapse;
+}
+
+.NewGameRoot
+{
+	width: 70%;
+	height: 70%;
+	vertical-align: center;
+	horizontal-align: center;
+	transition-property: transform, opacity;
+	transition-duration: 0.3s;
+	transition-timing-function: ease-in-out;
+}
+
+.NewGameRoot.Hidden
+{
+	transform: translatex(500px);
+	opacity: 0;
+}
+
+#next_page_button
+{
+	vertical-align:bottom;
+	horizontal-align: center;
+	margin-bottom: 50px;
+}
+
+.NewGamePage
+{
+	visibility: collapse;
+}
+
+.NewGamePage.Showing
+{
+	visibility: visible;
+}
+
+.PaypalCharge
+{
+	width: 800px;
+	height: 400px;
+	vertical-align: center;
+	horizontal-align: center;
+	transition-property: opacity, transform;
+	transition-duration: 0.3s;
+	padding: 50px;
+	border-radius: 15px;
+	background-color: #151515;
+}
+
+.PaypalCharge.Hidden
+{
+	transform: translateY(300px);
+}
+
+#paypal_payment_tooltip
+{
+	vertical-align: center;
+	horizontal-align: center;
+	text-align: center;
+	font-size: 18px;
+}
+
+.BoldText
+{
+	font-size:25px;
+	color: #dd2222;
+}
+
