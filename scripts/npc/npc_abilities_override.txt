@@ -1,0 +1,2151 @@
+"DOTAAbilities"
+
+{
+	"item_aghanims_shard"
+	{
+		"ItemCost"						"2400"
+		"ItemPermanent"					"0"
+		"ItemStockTime"					"1"			  
+		"ItemStockInitial"				"0"
+		"ItemStockMax"					"1"
+		"ItemInitialStockTime"			"660.0"
+	}
+
+	"item_recipe_revenants_brooch"
+	{
+		"ItemCost"						"3488"
+	}
+	"beastmaster_drums_of_slom"
+	{
+		"AbilityValues"
+		{
+			"min_drum_hit_interval"			"1"
+		}
+	}	
+	"drow_ranger_trueshot"
+	{
+		
+		"AbilityValues"
+		{
+				"trueshot_agi_bonus_per_level"      "1"
+                "trueshot_agi_bonus_allies_pct"     "50"
+		}
+	}
+	"skeleton_king_vampiric_spirit"
+	{
+		"HasScepterUpgrade"				"0"
+		"AbilityValues"
+		{
+
+			"duration"
+			{
+				"value"							"2.5"
+				"special_bonus_scepter"			"+0"
+			}
+			"scepter_aura_radius"
+			{
+				"value"							"0"
+				"special_bonus_scepter"			"0"
+				"affected_by_aoe_increase"	"1"
+				"RequiresScepter"				"1"
+			}
+		}
+	}
+
+    "sniper_take_aim"
+	{
+		"AbilityValues"
+		{
+
+			"slow"						
+			{
+				"value"								"0"				
+			}
+			"headshot_chance"			"100"
+			"active_attack_range_bonus"
+			{
+				"value"					"10"				
+			}
+			"bonus_armor"		
+			{
+				"value"												"5"
+				"special_bonus_unique_sniper_take_aim_armor"		"+15"
+			}
+			"no_reveal"
+			{
+				"special_bonus_facet_sniper_ghillie_suit"	"1"
+			}
+		}
+		
+	}
+	"special_bonus_unique_ursa"
+	{
+
+		"AbilityValues"
+		{
+			
+				"value"				"33"
+		}
+	}
+	"enchantress_impetus"
+	{
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+		"AbilityValues"
+		{
+			"distance_damage_pct"	
+			{
+				"value"			"15 20 25 30"
+				"special_bonus_unique_enchantress_4"	"+8"	
+			}
+		}
+	}
+	"spectre_dispersion"
+	{
+		"AbilityValues"
+		{
+			"damage_reflection_pct"
+			{
+				"value"		"8 12 16 20"
+				"special_bonus_unique_spectre_5"		"+10"
+			}
+		}
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_3"
+	}
+	"item_recipe_dagon"
+	{
+		"ItemCost"						"800"	
+	}
+	"antimage_mana_break"
+	{
+
+		"AbilityValues"
+		{
+			"mana_per_hit_pct"		
+			{
+				"value"		"1.6 2.4 3.2 4"
+				"special_bonus_unique_antimage_7"	"+15"
+			}
+		}
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_1"
+	}
+	
+	"item_vampire_fangs"
+	{
+
+		"AbilityValues"
+		{
+			"night_vision"			"150"
+		}
+	}
+	"troll_warlord_battle_trance"
+	{
+		"AbilityValues"
+		{	
+		"trance_duration"		"4.0"	
+		}
+	}
+	"pudge_flesh_heap"
+	{
+		"AbilityValues"
+		{
+			"flesh_heap_range"		"700"
+		}
+		
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_2"
+	}
+	"juggernaut_blade_fury"
+	{
+		"AbilityValues"
+		{
+			"duration"					
+			{
+				"value"				"4.0"
+				"special_bonus_unique_juggernaut_4"	"+1"
+			}				
+		}
+	}
+	"life_stealer_rage"
+	{
+		"AbilityValues"
+		{
+			"duration"
+			{
+				"value"				"2.5 3.0 3.5 4.0"
+				"special_bonus_unique_lifestealer"	"+1.5"
+			}
+		}
+	}
+	"windrunner_focusfire"
+	{
+		"AbilityValues"
+		{
+			"AbilityCooldown"
+			{
+				"value"			"70 50 30"
+				"special_bonus_facet_windrunner_whirlwind" "=60 =50 =30"
+			}
+
+			"AbilityDuration"				
+			{
+				"value"		"20.0 20.0 20.0"
+				"special_bonus_facet_windrunner_whirlwind"	"=12.0"			
+			}
+			"attacks_per_second"
+			{
+				"special_bonus_facet_windrunner_whirlwind" 				"7 9 12"				
+			}
+			"focusfire_damage_reduction"	
+			{
+				"value"						"-30"
+				"special_bonus_facet_windrunner_whirlwind" "-5"
+				"special_bonus_unique_windranger_8"		"+30"
+			}
+			
+		}
+	}
+	
+	"windrunner_windrun"
+	{	
+		"AbilityValues"
+		{
+			"physical_damage_pct"
+			{
+				"value"				"0"
+				"special_bonus_scepter"		"-30"
+			}			
+		}
+	}
+	"item_recipe_hurricane_pike"
+	{
+		
+		"ItemCost"						"1800"
+		"ItemStockTime"					"1"			  
+		"ItemStockInitial"				"0"
+		"ItemStockMax"					"1"
+		"ItemInitialStockTime"			"1020.0"	
+		"ItemRequirements"
+		{
+			"01"						"item_dragon_lance"
+		}
+	}
+	"phantom_assassin_fan_of_knives"	
+	{
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PURE"
+	}
+
+	"drow_ranger_marksmanship"
+	{
+
+		"HasScepterUpgrade"			"1"
+		"AbilityValues"
+		{
+
+			"split_count"
+			{		
+				"value"										"0"
+				"special_bonus_scepter"						"+3"
+			}
+		}
+	}
+		"sandking_burrowstrike"
+	{		
+		"HasScepterUpgrade"			"1"
+		"AbilityValues"
+		{
+			"AbilityCastRange"
+			{
+				"value"						"500 550 600 650"
+				"special_bonus_scepter"			"=1300"
+			}
+		}
+	}
+	
+	// 赏金忍术加强
+	"bounty_hunter_jinada"
+	{
+
+		"AbilityCooldown"				"6 4 2 0"
+		"AbilityValues"
+		{
+			"bonus_damage"
+			{
+				"value"			"60 100 140 180"
+				"special_bonus_unique_bounty_hunter_4"	"+200"
+			}
+			"gold_steal"
+			{
+				"value"			"1 2 3 4"
+				"special_bonus_unique_bounty_hunter"		"+12"
+			}
+		}
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_2"
+	}	
+
+	// 折光削弱次数
+	"templar_assassin_refraction"
+	{
+		
+		"AbilityCooldown"				"17.0 17.0 17.0 17.0"
+		"AbilityValues"
+		{
+			"instances"
+			{
+				"value"						"1 2 3 4"
+			}
+		}
+	}
+
+	// 贪婪加强
+"alchemist_goblins_greed"
+	{
+
+		"AbilityValues"
+		{
+			"duration"				"60"
+			"bonus_gold"			"12"
+			"bonus_bonus_gold"		"6"
+			"bonus_gold_cap"		"36"
+			"damage"
+			{
+				"value"		"10"
+			}
+		}
+	}
+
+	// 圣剑
+	"item_rapier"
+	{
+
+		"AbilityValues"
+		{
+		
+				"bonus_damage"			"500"
+			
+		}
+	}
+
+	"night_stalker_hunter_in_the_night"
+	{
+		"AbilityValues"
+		{
+			"bonus_movement_speed_pct_night"	
+			{
+				"value"			"22 28 34 40"
+				"special_bonus_unique_night_stalker_5" "+20"
+			}
+		}
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_5"
+	}
+	"special_bonus_cooldown_reduction_6"
+	{
+		"AbilityValues"
+		{
+			
+				"value"				"30"
+			
+		}
+	}
+	"special_bonus_cooldown_reduction_14"
+	{
+		"AbilityValues"
+		{
+			
+				"value"				"40"
+			
+		}
+	}
+	"item_force_staff"
+	{
+		"AbilityCooldown" "15"
+	}
+	"dazzle_bad_juju"
+	{
+		"AbilityValues"
+		{
+			
+				"cooldown_reduction"		"26 50 80"
+		
+		}
+	}
+	"item_recipe_force_staff"
+	{
+		"ItemCost" "0"
+	}
+
+
+	"item_butterfly"
+	{
+		
+		"AbilityValues"
+		{
+			
+				"bonus_agility"			"45"
+			
+		}
+	}
+
+	// 变猪
+	"item_unstable_wand"
+	{
+		"AbilityCooldown"				"10.0"		
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+			
+				"duration"		"3"
+		
+				"all_stats"			"10"
+			
+		}
+	}
+	"item_pogo_stick"
+	{
+			
+		"AbilityCooldown"				"15.0"
+		
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+			
+				"leap_distance"			"500"
+			
+		}
+	}
+	"item_paintball"
+	{
+		"AbilityCooldown"				"20.0"
+		"AbilityCastRange"				"900"
+		"AbilityManaCost"				"25"
+		"AbilityCastPoint"				"0.2"
+
+		
+
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+			
+				"movespeed"			"20"
+			
+				"dps"	"100"
+			
+				"duration"		"7"
+			
+		}
+	}
+	"item_misericorde"
+	{
+		"AbilityValues"
+		{
+			
+				"bonus_damage"			"20"
+			
+				"missing_hp"			"10"
+			
+				"damage"				"20"
+			
+				"aspd"					"20"
+						
+		}
+	}
+	"centaur_rawhide"
+	{
+		"AbilityValues"
+		{
+			"health_per_upgrade"		"100"
+			"upgrade_rate"				"120.0"
+		}
+	}
+	"centaur_stampede"
+	{
+		"AbilityValues"
+		{
+			"duration"			
+			{
+				"value"						"3.5 4 4.5"
+				"special_bonus_unique_centaur_7"	"+1"
+			}
+			"scepter_bonus_duration"     
+			{
+				"special_bonus_scepter"		"+1"
+			}
+			"base_damage"		"0"
+			"strength_damage"	
+			{
+				"value"							"2 2.5 3.5"			
+				"CalculateSpellDamageTooltip"	"1"
+			}
+			"slow_duration"		"3"
+			"radius"			"400"
+			"slow_movement_speed"			"100"
+			"damage_reduction"	
+			{
+				"special_bonus_scepter"	"+20 +25 +30"
+			}
+			"AbilityCooldown"
+			{
+				"value"					"60"
+				"special_bonus_unique_centaur_5"	"-25"
+			}
+			"has_flying_movement"	
+			{
+				"special_bonus_scepter"	"+1"
+			}
+		}
+	}
+	"item_ascetic_cap"
+	{
+
+		"AbilityCooldown"				"20.0"
+		"AbilityValues"
+		{
+			
+				"status_resistance"	"70"
+			
+				"bonus_health"		"500"
+			
+				"duration"		"5"
+			
+				"hp_regen"		"10"
+			
+		}
+	}
+	"item_black_powder_bag"
+	{
+
+		"AbilityCooldown"				"12"
+		
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+			
+				"bonus_armor"			"18"
+			
+				"radius"				"400"
+			
+				"damage"				"1200"
+			
+				"blind_duration"			"1.5"
+			
+				"blind_pct"			"100"
+			
+		}
+	}
+	"enigma_black_hole"
+	{
+		"AbilityValues"
+		{
+			"damage"			
+			{
+				"value"		"150 300 450"
+				"special_bonus_unique_enigma_6"	"+150"
+				
+			}
+			"scepter_pct_damage"
+			{
+				"value"					"8"
+				"RequiresScepter"		"1"
+			}
+		}
+	}
+
+
+	//兽王被动
+	"beastmaster_inner_beast"
+	{
+		"AbilityValues"
+		{
+			"radius"				"25000"
+			"bonus_attack_speed"
+			{
+				"value"									"20 40 60 80"
+				"special_bonus_unique_beastmaster_4"		"+80"
+			}
+		}
+	}
+
+	"morphling_adaptive_strike_agi"
+	{		
+		"AbilityValues"
+		{		
+				"damage_base"				
+				{
+					"value"					"55 165 275 385"
+					"CalculateSpellDamageTooltip"	"1"
+				}
+				"damage_max"					
+				{
+					"value"				"1.0 1.5 2.0 3.5"
+					"CalculateSpellDamageTooltip"	"0"
+				}
+		}
+	}
+	"brewmaster_drunken_brawler"
+	{		
+		"AbilityValues"
+		{
+			
+				"crit_multiplier"			"145 160 175 210"
+
+		}
+	}
+	"tinker_eureka"
+	{
+		"AbilityValues"
+		{
+			"int_per_one_cdr"				"5"
+			"one_percent_tooltip"			"1"
+			"max_cdr"						"40"
+
+			"item_cooldown_tooltip"
+			{
+				"dynamic_value"				"true"
+			}
+		}
+	}
+	"mars_gods_rebuke"
+	{
+
+		"AbilityValues"
+		{
+			"crit_mult"
+			{
+				"value"								"150 190 230 270"
+				"special_bonus_unique_mars_gods_rebuke_extra_crit"		"+105"
+				"DamageTypeTooltip"			"DAMAGE_TYPE_PHYSICAL"
+			}
+
+		}
+	}
+
+	//蓝胖嗜血术天赋
+	"special_bonus_unique_ogre_magi"
+	{
+		"AbilityValues"
+		{
+			
+				"value"				"90"
+		}
+	}
+
+	//NEC大招加强
+	"necrolyte_reapers_scythe"
+	{
+		// Casting
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastPoint"				"0.3"
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_4"
+
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"50"
+
+		
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+			"damage_per_health"			"0.7 0.8 0.9"
+			"stun_duration"				"1.5 1.5 1.5"
+			"hp_per_kill"				"2 4 6"
+			"mana_per_kill"				"1 2 3"
+			"AbilityCastRange"
+			{
+				"value"						"800"
+				"special_bonus_unique_necrophos_6"				"+200"
+			}
+		}
+	}
+	
+	//毒龙本体皮
+	"viper_corrosive_skin"
+	{
+		"AbilityValues"
+		{
+			"bonus_magic_resistance"	
+			{
+				"value"								"10 15 20 25"
+				"special_bonus_unique_viper_6"		"+65"
+			}
+			"damage"
+			{
+				"value"					"8 16 24 32"
+				"special_bonus_unique_viper_1"	"+48"
+			}
+			"max_range_tooltip"					"1400"
+		}
+	}
+
+	//毒龙法球魔晶减护甲改成2
+	"viper_poison_attack"
+	{
+	    "HasShardUpgrade"               "2"
+	}
+
+	//幻影长矛手  幻影冲刺加强
+	"phantom_lancer_phantom_edge"
+	{
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"12 10 8 6"
+		
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+				"min_distance"		"200"
+				"max_distance"				
+				{
+					"value"				"800 1000 1300 1600"
+					"LinkedSpecialBonus"		"special_bonus_unique_phantom_lancer"
+				}
+				"bonus_speed"		"1600"
+				"bonus_agility"
+				{
+					"value"				"10 20 30 40"
+				}
+				"agility_duration"		
+				{
+					"value"			"5"
+					"special_bonus_unique_phantom_lancer_2"		"+60"
+				}
+		}
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_3"
+	}
+	//幻影长矛手  幻影冲刺天赋改成+25000范围
+	"special_bonus_unique_phantom_lancer"
+	{
+
+		"AbilityValues"
+		{
+			
+				"value"				"25000"
+		}
+	}
+	//TB天赋全属性+40
+	"special_bonus_all_stats_10"
+	{
+		"AbilityValues"
+		{
+				"value"				"40"
+
+		}
+	}
+	//力丸大 系数增加
+	"riki_backstab"
+	{
+		"AbilityValues"
+		{
+			"damage_multiplier"				
+			{
+				"value"		"1.4 1.8 2.2"
+				"LinkedSpecialBonus"		"special_bonus_unique_riki_1"
+				"CalculateSpellDamageTooltip"	"0"
+				"DamageTypeTooltip"			"DAMAGE_TYPE_NONE"
+			}
+		
+			"backstab_angle"				"105 105 105"
+			"fade_delay"					"4 3 2"
+			"bonus_xp_kill"					"200 350 500"
+			"bonus_xp_assist"				"200"
+		}
+	}
+	
+	"special_bonus_unique_riki_1"
+	{
+		"AbilityValues"
+		{
+			
+				"value"				"0.6"
+			
+		}
+	}
+
+
+	//全能大
+	"omniknight_guardian_angel"
+	{
+		"AbilityValues"
+		{
+				"duration"					"4 4.5 5"
+			
+				"duration_scepter"			"4 5 6"
+
+		}
+	}
+	//沉默大
+	"silencer_global_silence"
+	{
+		"AbilityDuration"				"3.0 3.5 4.0"
+	}
+	//屠夫天赋
+	"pudge_dismember"
+	{
+		"AbilityValues"
+		{
+			"dismember_damage"		
+			{
+				"value"					"80 100 120"
+				"special_bonus_unique_pudge_3"	"x3"	
+				"CalculateSpellDamageTooltip"	"1"
+			}
+			"strength_damage"		
+			{
+				"value"				"0.3 0.6 0.9"
+				"special_bonus_unique_pudge_3"	"x3"
+				"CalculateSpellDamageTooltip"	"0"
+			}
+			"AbilityChannelTime"			
+			{
+				"value"				"2.75 2.75 2.75"
+				"special_bonus_unique_pudge_6"	"+1.25"
+			}
+			
+		}
+	}
+
+	//火猫天赋
+	"ember_spirit_sleight_of_fist"
+	{
+
+		"AbilityValues"
+		{
+				"bonus_hero_damage"			
+				{
+					"value"		"40 80 120 260"
+					"special_bonus_unique_ember_spirit_6"			"+650"
+					"CalculateSpellDamageTooltip"	"0"
+				}
+		
+		}
+	}
+
+	//pa匕首
+	"phantom_assassin_stifling_dagger"
+	{
+		"AbilityValues"
+		{
+			
+				"attack_factor_tooltip"	"60 90 120 150"
+
+		}
+	}
+	"wisp_tether"
+	{
+		"AbilityValues"
+		{
+				"radius"					"2000"
+		}
+	}
+	"razor_plasma_field"
+	{
+		"AbilityValues"
+		{
+			"damage_min"
+			{
+				"value"				"35 40 45 50"
+				"special_bonus_unique_razor_4"	"+90"								
+			}
+			"damage_max"
+			{
+				"value"				"80 115 150 185"
+				"special_bonus_unique_razor_4"	"+90"														
+			}
+			"second_ring_reduction"
+			{
+				"value"						"0"
+				"special_bonus_unique_razor_plasmafield_second_ring"				"-30"
+			}
+		}
+	}
+	//电棍天赋
+	"special_bonus_unique_razor_5"
+	{
+
+		"AbilityValues"
+		{
+			
+				"value"				"35"
+				
+		}
+	}
+	//死亡一指
+	"lion_finger_of_death"
+	{
+		"AbilityCooldown"				"35.0 30.0 25.0"
+		"AbilityValues"
+		{
+				"damage_per_kill"			
+				{
+					"value"				"70"
+					"special_bonus_unique_lion_8"	"+70"
+					"CalculateSpellDamageTooltip"	"0"
+				}
+
+				"cooldown_scepter"			
+				{
+					"value"	"25.0 20.0 18.0"
+					"RequiresScepter"			"1"
+				}
+		}
+	}
+	// 球状闪电
+	"storm_spirit_ball_lightning"
+	{
+		"AbilityCastPoint"				"0.3 0.3 0.3"
+		"AbilityCooldown"				"5"
+		"AbilityManaCost"				"30"
+		"AbilityDamage"					"8 12 16"
+		"AbilityValues"
+		{
+			
+				"ball_lightning_initial_mana_percentage"		"8"		
+			
+				"ball_lightning_initial_mana_base"				"30"		
+		
+				"ball_lightning_move_speed"			"1250 1875 2500"		
+			
+				"ball_lightning_aoe"				"200"		
+			
+				"ball_lightning_travel_cost_base"	"10"		
+		
+				"ball_lightning_travel_cost_percent"	"0.65"		
+		
+				"ball_lightning_vision_radius"			"400"		
+			
+				"blocker_duration"			"5"		
+		
+				"scepter_remnant_interval"			"300"		
+			
+		}
+	}
+	//小小拔树
+	"tiny_tree_grab"
+	{
+		"AbilityCooldown"				"9 7 5 3"
+		"AbilityCastRange"				"965"
+		"AbilityValues"
+		{
+			
+				"attack_count"				"233"
+			"bonus_damage"
+			{
+				"value"							"10 20 40 60"				
+				"special_bonus_unique_tiny_7"		"+120"
+			}
+				
+		}
+	}
+
+	"phantom_assassin_blur"
+	{
+		"AbilityValues"
+		{
+
+			
+				"radius"				"600"
+			
+		}
+	}
+	
+ 	//大圣天赋 一棒大圣 
+
+		"monkey_king_boundless_strike"
+	{
+		"AbilityValues"
+		{
+			"strike_crit_mult"
+			{
+				"value"						"120 140 160 180"	
+				"DamageTypeTooltip"			"DAMAGE_TYPE_PHYSICAL"
+				"special_bonus_unique_monkey_king_10"			"+260"
+			}			
+			"AbilityCooldown"				
+			{
+				"value"					"22 18 16 12"	
+			}
+
+		}
+	}
+
+
+	"legion_commander_duel"
+	{
+		"AbilityValues"
+		{
+			"reward_damage"			
+			{
+				"value"			"18 28 38"
+				"LinkedSpecialBonus"	"special_bonus_unique_legion_commander"
+			}
+			"scepter_damage_reduction_pct"			
+			{
+				"value"				"70"
+				"RequiresScepter"						"1"
+			}
+			"AbilityCooldown"	
+			{
+				"value"					"35"
+				"special_bonus_scepter"			"-10"
+			}
+		}
+	}
+	"special_bonus_unique_legion_commander"
+	{
+		"AbilityValues"
+		{
+			
+				"value"				"38"
+				
+		}
+	}
+	//大牛大
+	"elder_titan_earth_splitter"
+	{
+		"AbilityCooldown"				"100.0 95.0 90.0"
+		"AbilityValues"
+		{
+			
+				"crack_time"				"1.2"
+			
+				"speed"						"2500"
+			
+				"damage_pct"				"35 50 60"
+				
+				"vision_step"				"600"
+			
+				"total_steps"				"4"
+			
+		}
+	}
+	//紫猫天赋 一刀紫猫 
+	"special_bonus_unique_void_spirit_8"
+	{
+
+		"AbilityValues"
+		{
+			
+				"value"					"500" 
+				
+		}
+	}
+
+   	 //黑鸟天赋，大招
+	"special_bonus_unique_outworld_devourer_4"
+	{
+		"AbilityValues"
+		{
+			
+				"value"				"0.2"
+				
+		}
+	}
+	"obsidian_destroyer_sanity_eclipse"
+	{
+		"AbilityCooldown"				"120 100 80"
+		"AbilityValues"
+		{
+				"damage_multiplier"	"0.8"
+				
+		}
+	}
+	"nevermore_requiem"
+	{
+
+		"AbilityCastPoint"				"0.5"
+		"AbilityDamage"					"100 160 220"
+		// Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityModifierSupportValue"	"0.8"	// Primarily about the damage
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+				"AbilityCooldown"				
+				{
+					"value"		"100 80 60"
+					"special_bonus_scepter"	"-30"
+				}
+				"requiem_slow_duration"	
+				{
+					"value"		"0.1"
+					"LinkedSpecialBonus"		"special_bonus_unique_nevermore_6"
+				}
+				"requiem_slow_duration_max"	
+				{
+					"value"					"0.5"
+					"LinkedSpecialBonus"		"special_bonus_unique_nevermore_6"
+					"LinkedSpecialBonusField"		"value2"
+				}	
+				"requiem_damage_pct_scepter"	
+				{
+					"value"			"60"
+					"RequiresScepter"			"1"
+					"CalculateSpellDamageTooltip"	"0"
+				}
+		}
+	}
+    //回光，修改CD 40-->70 跟持续时间 6-->4 神杖持续时间 8-->5
+	"abaddon_borrowed_time"
+	{
+		"AbilityCooldown"				"90.0 80.0 70.0"
+		"AbilityValues"
+		{
+			
+				"duration"					"2.0 2.5 3.0"
+			
+				"duration_scepter"			"3.0 3.5 4.0"
+				
+			
+		}
+	}
+
+    //虚妄之诺，修改CD 45--> 40 跟持续时间 10-->7
+	"oracle_false_promise"
+	{
+		"AbilityCooldown"				"100 80 60"
+
+		"AbilityValues"
+		{
+			
+				"duration"				"4 5 6"
+				
+				"radius"				"400"
+			
+		}
+	}	   
+	 //小鱼大
+
+	"slark_shadow_dance"
+	{
+	"AbilityCooldown"               "70 60 50"
+		"AbilityValues"
+		{
+			
+			"duration"					
+			{	
+				"value"			"3 3.25 3.5"
+				"LinkedSpecialBonus"	"special_bonus_unique_slark_3"
+			}
+
+		}
+	}
+    //激怒，修改CD 30-->50 神杖CD 18-->38
+	"ursa_enrage"
+	{
+
+
+		
+		"AbilityValues"
+		{			
+
+			"AbilityCooldown"
+            {
+                "value"                 "70 60 50"
+                "special_bonus_scepter" "=50 =44 =38"
+            }
+				"duration"
+            {
+                "value"                         "4 4.5 5"
+            }
+				
+		}
+	}
+
+    //唱歌，修改CD跟持续时间
+	"naga_siren_song_of_the_siren"
+	{
+		"AbilityCooldown"				"160.0 130.0 100.0"
+		"AbilityValues"
+		{
+
+				"duration"					"5.0 5.0 5.0"
+			
+				"scepter_cooldown"			"160.0 120.0 80.0"
+				
+		}
+	}
+
+    //薄葬，修改CD 18--> 26 持续时间 -1s
+	"dazzle_shallow_grave"
+	{
+		"AbilityCooldown"				"42 38 30 28"
+		"AbilityValues"
+		{
+			
+				"duration"		"2 2 2.5 3"
+			
+				"fx_halo_height"	"190 240 300 350"
+			
+		}
+	}
+	
+	"elder_titan_natural_order"
+	{
+		"AbilityValues"
+		{
+			
+				"radius"					"350"
+			
+				"armor_reduction_pct"	    "20 40 60 80"
+			
+				"magic_resistance_pct"		"30 40 50 60"
+			
+		}
+	}
+
+	"tidehunter_kraken_shell"
+	{
+		"AbilityValues"
+		{
+				"damage_reduction"		"12 24 36 48"
+				
+				"damage_cleanse"		"1300 1200 1100 1000"
+			
+				"damage_reset_interval"	"4.5 4.5 4.5 4.5"
+			
+		}
+	}
+
+	"elder_titan_return_spirit"
+	{
+		"AbilityCooldown"				"0.1"
+	}
+
+	"shredder_return_chakram"
+	{
+		"AbilityCooldown"				"0.1"
+	}
+
+
+
+
+
+	/// 物品
+
+	"item_smoke_of_deceit" "REMOVE"
+	// "item_tpscroll" "REMOVE"
+	"item_ward_observer" "REMOVE"
+	"item_ward_sentry" "REMOVE"
+	"item_tome_of_knowledge" "REMOVE"
+	"item_bottle" "REMOVE"
+	"item_travel_boots"	"REMOVE"
+	"item_travel_boots_2"	"REMOVE"
+	"item_gem"			"REMOVE"
+	"item_octarine_core"  "REMOVE"
+	"item_recipe_revenants_brooch"  "REMOVE"
+
+
+	//=================================================================================================================
+	// Black King Bar
+	//=================================================================================================================
+	"item_sheepstick"
+	{
+	"AbilityCastRange"				"700"
+	"AbilityCooldown"				"24.0"
+	}
+
+	"item_sphere"
+	{
+		
+		"AbilityValues"
+		{
+			
+				"bonus_all_stats"		"24"
+			
+		}
+	}
+	"tiny_grow"
+	{
+ 		"AbilityValues"
+        {
+                "bonus_armor"               "10"
+                "bonus_damage"          
+                {
+                    "value"                 "60 140 240"
+                    "CalculateSpellDamageTooltip"   "0"
+                }
+                "attack_speed_reduction"    
+                {
+                    "value"     "15"
+                    "special_bonus_unique_tiny_6" "+10"
+                }
+                "move_speed"        "10 20 30"
+        }
+	}
+	"item_armlet"
+	{
+		"AbilityValues"
+		{
+			"unholy_health_drain_per_second"	"4500"
+		}
+	}
+	"item_witch_blade"
+	{
+		
+		"AbilityValues"
+		{
+			
+				"bonus_intellect"		"32"
+			
+		}
+	}
+	"item_black_king_bar"
+	{
+		"AbilityCooldown"				"36"
+
+		"AbilityValues"
+		{
+			
+				"bonus_strength"		"10"
+			
+				"bonus_damage"			"24"
+			
+				"duration"				"5.0 4.5 4.0"
+			
+				"max_level"				"3"
+			
+				"model_scale"			"30"     // Percentage over model scale
+			
+		}
+	}
+	"item_ghost"
+	{
+		"AbilityValues"
+		{
+			
+				"duration"				"2.0"
+		}
+	}
+
+
+	"item_recipe_ethereal_blade"
+	{
+		"ItemCost"						"100"	
+	}
+	"item_ethereal_blade"
+	{
+		"AbilityCastPoint"				"0.0"
+		"AbilityCooldown"				"25.0"	    
+		"AbilityValues"
+		{
+			
+				"bonus_agility"			"20"
+			
+				"bonus_strength"		"10"
+			
+				"bonus_intellect"		"20"
+			
+				"blast_movement_slow"	"-80"
+			
+				"duration"				"1.2"
+			
+				"blast_agility_multiplier"			"2.0"
+			
+				"blast_damage_base"			"400"
+			
+				"duration_ally"				"1.0"
+			
+				"ethereal_damage_bonus"	"-40"
+			
+				"projectile_speed"	"1275"
+			
+				"spell_amp"			"30"
+			
+		}
+	}
+  	//血辣，沉默时间5-->3.5
+	"item_bloodthorn"
+	{
+		"AbilityValues"
+		{	
+			
+				"silence_duration"		"3.5"
+			
+
+		}
+	}
+	
+	"item_monkey_king_bar"
+	{
+		"AbilityValues"
+		{
+			
+				"bonus_damage"			"55"
+			
+				"bonus_attack_speed"	"60"
+			
+				"bonus_chance"			"85"
+			
+				"bonus_chance_damage"			"100"
+			
+		}
+	}
+
+	"item_recipe_kaya"
+	{
+		"ItemCost"						"1000"	
+		"ItemRequirements"
+		{
+			"01"						"item_mystic_staff;item_staff_of_wizardry;item_robe"
+		}
+	}
+
+	"item_recipe_silver_edge"
+	{
+		"ItemCost"				"0"
+	}
+	"leshrac_defilement"
+	{
+		"AbilityValues"
+		{
+			"aoe_per_int"				"0.6"
+		}
+	}
+	"skywrath_mage_staff_of_the_scion"
+	{
+		"AbilityValues"
+		{
+			"cooldown_reduction"		"0.2"
+		}
+	}
+	"item_kaya"
+	{
+		"AbilityValues"
+		{
+			
+				"bonus_intellect"			"30"
+			
+				"manacost_reduction"			"25"
+		
+				"spell_amp"			"25"
+			
+		}
+	}
+
+	"item_kaya_and_sange"
+	{
+		"AbilityValues"
+		{
+				"bonus_strength"		"16"
+		
+				"bonus_intellect"			"30"
+			
+				"status_resistance"				"20"
+			
+				"manacost_reduction"			"28"
+			
+				"spell_amp"			"30"
+			
+				"bonus_damage"			"12"
+			
+		}
+	}
+
+	"item_yasha_and_kaya"
+	{
+		"AbilityValues"
+		{
+			
+				"bonus_agility"			"16"
+			
+				"bonus_intellect"			"30"
+			
+				"bonus_attack_speed"	"16"
+			
+				"manacost_reduction"			"28"
+			
+				"movement_speed_percent_bonus"	"12"
+			
+				"spell_amp"			"30"
+			
+		}
+	}
+
+	"item_refresher"
+	{
+		
+		"AbilityCooldown"				"50.0"
+	}
+
+	"item_recipe_desolator"
+	{
+		"ItemCost"						"800"
+	}
+
+	"item_desolator"
+	{
+		"AbilityValues"
+		{
+				"bonus_damage"			"60"
+				"corruption_armor"		"-10"
+				"bonus_damage_per_kill"	"2"
+				"bonus_damage_per_assist"	"1"
+				"max_damage"			"100"
+		}
+	}
+
+	"item_greater_crit"
+	{
+		"AbilityValues"
+		{
+			
+				"crit_chance"			"35"
+			
+		}
+	}
+
+
+	"nevermore_necromastery"
+	{
+
+		"AbilityValues"
+		{
+				"necromastery_damage_per_soul"	
+				{
+					"value"					"2 3 4 5"
+					"CalculateSpellDamageTooltip"	"0"
+					"special_bonus_unique_nevermore_1"			"+2"
+				}
+				"necromastery_soul_release"		"0.9"
+		}
+	}
+	"special_bonus_unique_nevermore_3"
+	{
+		"AbilityValues"
+		{
+			"value"
+			{
+				"value" "10"
+				"ad_linked_abilities" "nevermore_dark_lord"
+			}
+		}
+	}
+	"nevermore_dark_lord"
+	{
+
+		"AbilityValues"
+		{
+			"presence_armor_reduction"
+			{
+				"value"		"-4 -6 -8 -10"
+			}
+			"kill_buff_duration"
+			{
+				"value"						"0"
+				"special_bonus_facet_nevermore_lasting_presence"	"+10"
+			}
+		}
+	}
+	"sven_gods_strength"
+	{
+		"AbilityCooldown"				"80 80 80"
+	}
+    "item_recipe_blade_mail"
+    {
+        "ItemCost"						"2000"
+    }
+	"item_heavens_halberd"
+	{
+		"AbilityCooldown"				"30"
+		"AbilityValues"
+		{
+
+				"bonus_evasion"				"25"
+	
+				"bonus_strength"		"20"
+		
+				"disarm_range"				"3.0"
+			
+				"disarm_melee"				"2.0"
+		
+				"status_resistance"				"15"
+		
+				"hp_regen_amp"			"30"
+			
+		}
+	}
+
+	"item_bloodstone"
+	{
+		"AbilityValues"
+		{
+			
+				"bonus_health"			"425"
+			
+				"bonus_mana"			"425"
+			
+				"bonus_intellect"			"40"
+			
+				"manacost_reduction"			"12"
+		
+				"spell_amp"			"30"
+		
+				"mana_regen_multiplier"		"200"
+			
+				"regen_per_charge"		"0.2"
+		
+				"amp_per_charge"		"0.35"
+			
+				"death_charges"				"3"
+			
+				"kill_charges"			"1"
+			
+				"charge_range"			"1600"
+			
+				"initial_charges_tooltip" "14"
+			
+				"mana_cost_percentage" "30"
+			
+				"restore_duration" "2.0"
+			
+		}
+	}
+	"pangolier_swashbuckle"
+	{
+		"AbilityValues"
+		{
+				"attack_damage"
+				{
+					"value"				"0"
+					"special_bonus_unique_pangolier_3"	"+100"
+				}
+				"strikes"				
+				{
+					"value"			"4"				
+				}
+
+		}
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_1"
+	}
+
+	"lone_druid_bear_necessities"
+	{
+		"AbilityValues"
+		{	
+			"item_slots"				"6"
+			"bonus_stat_percent"		"30 45 60 75"
+		}
+	}	
+	// 中立生物物品
+	"item_fallen_sky"
+	{
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		"AbilityCooldown"		"5"
+		"AbilityValues"
+		{
+			"blink_damage_cooldown"	"1.0"
+		}
+	}
+    //贤者石，金币奖励 70-->250
+	"item_philosophers_stone"
+	{
+		"AbilityValues"
+		{
+			
+				"bonus_gpm"			"250"
+			
+
+		}
+
+
+	}
+	//复仇之影
+	"item_vengeances_shadow"
+	{
+		"AbilityValues"
+		{
+			
+				"bonus_health"			"800"
+			
+				"damage_return"			"70"
+			
+				"illusion_incoming_damage"			"100"
+			
+		}
+	}
+	"item_force_field"
+	{
+		"AbilityValues"
+		{
+			
+				"active_reflection_pct"		"65"
+			
+		}
+	}
+    //减甲球，护甲减少 4-->8
+	"item_orb_of_destruction"
+	{
+		"AbilityValues"
+		{
+			
+				"armor_reduction"			    "8"
+			
+
+		}
+
+
+	}
+
+  //五峰长剑
+	"item_penta_edged_sword"
+	{
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		"ItemIsNeutralActiveDrop"       "1"
+		"AbilityValues"
+		{
+			
+				"damage"			"60"
+		
+				"melee_attack_range"	"170"
+			
+	
+		}
+	}
+    //风暴神器，修改伤害 200-->800
+	"item_stormcrafter"
+	{
+		"AbilityValues"
+		{
+			
+				"damage"			"800"
+			
+				"interval"			"1.5"
+			
+		}
+
+
+	}
+
+	//冥灵书，属性加成 30-->100
+	"item_demonicon"
+	{
+		"AbilityValues"
+		{
+			
+				"bonus_strength"			"100"
+			
+				"bonus_intellect"		"100"
+			
+		}
+
+
+	}
+
+    //忍者用具，敏捷 20-->45 移速 30-->40
+	"item_ninja_gear"
+	{
+		"AbilityValues"
+		{
+			
+				"bonus_agility"			"45"
+			
+				"passive_movement_bonus"		"40"
+			
+		}
+	}
+	//浩劫巨锤
+	"item_havoc_hammer"
+	{
+
+		"AbilityValues"
+		{
+			
+				"bonus_strength"		"32"
+			
+				"range"		"500"
+		
+				"nuke_base_dmg"		"275"
+			
+				"nuke_str_dmg"		"1.5"
+			
+		}
+	}
+	"item_fusion_rune"
+	{
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		"AbilityCooldown"				"30.0"
+		"ItemInitialCharges"			"6"
+		"AbilityValues"
+		{
+			
+				"duration"		"20"
+			
+		}
+	}
+
+	"item_apex"
+	{
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		"AbilityValues"
+		{
+			"primary_stat"			 	"666"
+			"primary_stat_universal"	"222"
+		}
+	}
+
+	"item_phoenix_ash"
+	{
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		"ItemInitialCharges"			"18"
+		"AbilityValues"
+		{
+			
+				"health_pct"			"100"
+			
+		}
+	}
+"item_trusty_shovel"      
+{
+		"ItemDroppable"	    "1"
+		
+	}          
+"item_occult_bracelet"   
+{
+		"ItemDroppable"	    "1"
+		
+	}           
+	"item_desolator_2"
+	{
+		"ItemDroppable"	    "1"
+		"AbilityValues"
+		{
+		
+				"bonus_damage"			"100"
+			
+				"corruption_armor"		"-18"
+		
+				"corruption_duration"	"15.0"
+			
+		}
+	}
+	"undying_flesh_golem"
+	{
+		"AbilityValues"
+		{
+			"AbilityCooldown"				
+			{
+				"value"					"70"
+			}	
+		}
+	}
+	"item_helm_of_the_undying"
+	{
+		"AbilityValues"
+		{
+		
+				"bonus_armor"			"6"
+			
+				"duration"			"2"
+			
+		}
+	}
+	//空间之门点数
+	"item_dimensional_doorway"
+	{
+
+		"AbilityCooldown"				"30.0"
+		"ItemInitialCharges"			"3"
+	}
+
+	"item_panic_button"
+	{
+		"AbilityCooldown"				"30.0"
+		"AbilityValues"
+		{
+			
+				"bonus_health"			"400"
+		
+				"heal"		"2000"
+		
+				"health_threshold"		"20"
+			
+		}
+	}
+
+	"earthshaker_enchant_totem"
+	{
+		"AbilityValues"
+		{
+			"totem_damage_percentage"	
+			{
+				"value"		"200 300 400 550"
+			}
+			"scepter_leap_duration"		"0.4"
+		}
+	}
+	"zuus_lightning_hands"
+	{
+		"AbilityValues"
+		{
+			"attack_range_bonus"				"150"
+			"arc_lightning_damage_pct"		"100"
+			"arc_lightning_damage_illusion_pct"		"20"
+
+		}
+	}
+
+
+	"zuus_arc_lightning"
+	{
+		"AbilityValues"
+		{
+			"arc_damage"
+			{
+				"value"			"90 120 150 300"
+				"special_bonus_unique_zeus_2"	"+260"
+			}
+			"jump_count"			"3"
+			"jump_delay"			"0.25 0.25 0.25 0.25"
+		
+		}
+		
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_1"
+	}
+	"item_quickening_charm"			  	
+	{
+	"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+	}
+	"item_spider_legs"				  	
+	{
+	"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+	}
+	"item_paladin_sword"			  	
+	{
+	"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+	}
+	"item_orb_of_destruction"		  	
+	{
+	"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+	}
+	"item_titan_sliver"				  	
+	{
+	"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+	}
+	"item_mind_breaker"				  	
+	{
+	"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+	}
+	"item_elven_tunic"				  	
+	{
+	"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+	}
+	"item_ceremonial_robe"				  	
+	{
+	"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+	}
+	"item_psychic_headband"				  	
+	{
+	"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+	}
+	"item_dimensional_doorway"			   	
+	{
+	"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+	}
+	"item_tome_of_aghanim"					
+	{
+	"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+	}
+	"item_greater_mango"			 	
+	{
+	"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+	}
+	"item_gossamer_cape"              	
+	{
+	"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+	"AbilityCooldown"				"4"
+	}
+	"item_defiant_shell"              	
+	{
+	"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+	"AbilityValues"
+		{
+			"bonus_armor"					"9"
+			"all_stats"			"17"
+			"counter_cooldown"			"2"
+		}
+	}
+	"item_dandelion_amulet" 			
+	{
+	"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+	"AbilityValues"
+		{
+			"magic_block"			"700"
+			"min_damage"			"75"
+		}
+	}
+	"item_martyrs_plate" 			
+	{
+	"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+	"AbilityCooldown"				"30.0"
+	"AbilityValues"
+		{
+			"duration"					"8"
+			"damage_redirection"		"40"
+		}
+	}
+	"item_timeless_relic"			  	
+	{
+	"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+	}
+	"item_spell_prism"				  	
+	{
+	"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+	}
+	"item_flicker"					  	
+	{
+	"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+	}
+	"item_ninja_gear"				  	
+	{
+	"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+	}
+	"item_illusionsts_cape"			  	
+	{
+	"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+	}
+	"item_the_leveller"				  	
+	{
+	"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+	}
+	"item_minotaur_horn"			  	
+	{
+	"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+	}
+	"item_spy_gadget"				  	
+	{
+	"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+	}
+	"item_trickster_cloak"			  	
+	{
+	"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+	}
+	"item_stormcrafter"				  	
+	{
+	"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+	}
+	"item_rhyziks_eye"                                                	
+	{
+	"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+	}
+	"item_havoc_hammer"                                           	
+	{
+	"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+	}
+	"item_panic_button"                                              	
+	{
+	"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+	}
+	"item_ascetic_cap"				  	
+	{
+	"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+	}
+	"item_heavy_blade"				  	
+	{
+	"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+	}
+	"item_black_powder_bag"				  	
+	{
+	"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+	}
+	"item_force_boots"				  	
+	{
+	"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+	}
+	"item_desolator_2"				  	
+	{
+	"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+	}
+	"item_seer_stone"				  	
+	{
+	"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+	}
+	"item_mirror_shield"			  	  	
+	{
+	"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+	}
+	"item_ballista"					  	
+	{
+	"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+	}
+	"item_demonicon"				  	
+	{
+	"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+	}
+	"item_pirate_hat"				  	
+	{
+	"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+	}
+	"item_ex_machina"				  	
+	{
+	"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+	}
+	"item_giants_ring"				  	
+	{
+	"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+	}
+	"item_dredged_trident"		                  	
+	{
+	"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+	}
+	"item_recipe_trident"                                                  	
+	{
+	"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+	}
+	"item_woodland_striders"                                                    	
+	{
+	"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+	}
+	"item_force_field"				  	
+	{
+	"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+	}
+	"item_vengeances_shadow"				  	
+	{
+	"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+	}
+	"item_helm_of_the_undying"					
+	{
+	"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+	}
+	"item_princes_knife"
+	{
+	"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+	}
+	"item_nemesis_curse"
+    {	
+    	"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+        "AbilityValues"
+        {
+            "debuff_self"   "10"
+            "debuff_enemy"  "16"
+            "debuff_enemy_duration" "5"
+            "bonus_damage"          "55"
+        }
+    }
+    "item_avianas_feather"
+    {
+        "ItemShareability"				"ITEM_FULLY_SHAREABLE"
+        "AbilityValues"
+        {
+            "evasion"   "25"
+            "move_speed"    "50"
+            "flight_threshold"          "80"
+        }
+    }
+    "item_unwavering_condition"
+    {
+       "ItemShareability"				"ITEM_FULLY_SHAREABLE"
+        "AbilityValues"
+        {
+            "max_health"            "6666"
+            "magic_resist"          "95"
+        }
+    }
+    
+}

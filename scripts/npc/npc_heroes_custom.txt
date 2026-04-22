@@ -1,0 +1,122 @@
+// Dota2 Editor
+// Get latest version: https://github.com/zombieJ/nw-dota2editor
+
+"DOTAHeroes"
+{
+	"Version"		"1"
+
+
+	"npc_dota_hero_rattletrap"
+	{
+		"override_hero"		"npc_dota_hero_rattletrap"
+		"Ability17"		"special_bonus_magic_resistance_40"
+		"AttributeStrengthGain"		"3.5"
+		"AttributeAgilityGain"		"2.3"
+		"AttributeIntelligenceGain"		"1.5"
+	}
+	"npc_dota_hero_earthshaker"
+	{
+		"override_hero"		"npc_dota_hero_earthshaker" 
+		"Ability16"		"special_bonus_magic_resistance_40"
+	}
+	"npc_dota_hero_mirana"
+	{
+		"override_hero"		"npc_dota_hero_mirana"
+		"ProjectileSpeed"	"1200"
+	}
+	"npc_dota_hero_luna"
+	{
+		"override_hero"		"npc_dota_hero_luna"
+		"ProjectileSpeed"	"1200"
+	}
+	"npc_dota_hero_monkey_king"
+	{
+		"override_hero"		"npc_dota_hero_monkey_king"
+		"Ability17"		"special_bonus_unique_monkey_king"
+	}
+	"npc_dota_hero_luna"
+	{
+		"override_hero"		"npc_dota_hero_luna"
+		"Ability16"		"special_bonus_lifesteal_30"
+	}
+	"npc_dota_hero_zuus"
+	{
+		"override_hero"		"npc_dota_hero_zuus"
+		"Ability16"		"special_bonus_spell_lifesteal_50"
+	}
+	"npc_dota_hero_pangolier"
+	{
+		"override_hero"		"npc_dota_hero_pangolier"
+		"Ability10"		"special_bonus_spell_amplify_20"
+	}
+	"npc_dota_hero_queenofpain"
+	{
+		"override_hero"		"npc_dota_hero_queenofpain"
+		"Ability12"		"special_bonus_spell_block_18"
+	}
+	"npc_dota_hero_monkey_king"
+	{
+		"override_hero"		"npc_dota_hero_monkey_king"
+		"Ability10"		"special_bonus_unique_monkey_king"
+	}
+	"npc_dota_hero_nyx_assassin"
+	{
+		"override_hero"		"npc_dota_hero_nyx_assassin"
+		"Ability15"		"special_bonus_agility_80"
+	}
+	"npc_dota_hero_earth_spirit"
+	{
+		"override_hero"		"npc_dota_hero_earth_spirit"
+		"Ability16"		"special_bonus_spell_amplify_25"
+	}
+	"npc_dota_hero_nevermore"
+	{
+		"override_hero"		"npc_dota_hero_nevermore"
+		"Ability13"		"special_bonus_unique_nevermore_3"
+		"Ability15"		"special_bonus_cooldown_reduction_6"
+	}
+	"npc_dota_hero_drow_ranger"
+	{
+		"override_hero"		"npc_dota_hero_drow_ranger"
+		"Ability15"		"special_bonus_cooldown_reduction_14"
+	}
+	"npc_dota_hero_medusa"
+	{
+		"override_hero"		"npc_dota_hero_medusa"
+		"Ability16"		"special_bonus_intelligence_75"
+		"AttributeBaseStrength"		"17"
+		"AttributeStrengthGain"		"1.5"
+	}
+	"npc_dota_hero_ogre_magi"	
+	{
+		"override_hero"		"npc_dota_hero_ogre_magi"
+		"AttributeStrengthGain"		"3.3"
+		"AttributeBaseIntelligence"		"15"
+		"AttributeIntelligenceGain"		"2.5"
+	}
+	"npc_dota_hero_enigma"
+	{	
+		"override_hero"			"npc_dota_hero_enigma"
+		"AttributePrimary"		"DOTA_ATTRIBUTE_INTELLECT"
+		"AttackDamageMin"		"44"
+		"AttackDamageMax"		"50"
+	}
+	"npc_dota_hero_invoker"
+	{	
+		"override_hero"			"npc_dota_hero_invoker"
+		"Ability21"		"special_bonus_unique_invoker_6"
+	}
+	"npc_dota_hero_puck"
+	{
+		"override_hero"		"npc_dota_hero_puck"
+		"Ability15"		"special_bonus_gold_income_420"
+	}
+	"npc_dota_hero_night_stalker"
+	{	
+		"override_hero"		"npc_dota_hero_night_stalker"
+		"Ability10"		"special_bonus_unique_night_stalker_5"
+	}
+
+   
+		
+}
